@@ -24,8 +24,8 @@ const Website = () => {
     label: t(`common.navigation.${section}`)
   }));
 
-  // Get services with type assertion
-  const services = t<ServiceItem[], 'translation', 'services.items'>('services.items', { returnObjects: true });
+  // Get services with proper type casting
+  const services = (t('services.items', { returnObjects: true }) as ServiceItem[]);
 
   return (
     <div className="min-h-screen bg-gray-50">
