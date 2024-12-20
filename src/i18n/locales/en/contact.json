@@ -1,15 +1,25 @@
 {
   "title": "Contact Us",
   "form": {
-    "name": "Name",
-    "email": "Email address",
-    "message": "Message",
-    "required": "Required field",
-    "submit": "Send message"
+    "name": {
+      "label": "Name",
+      "placeholder": "Your name"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Your email address"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Your message"
+    },
+    "required": "*Required fields",
+    "submit": "Send Message"
   },
   "info": {
+    "title": "Contact Information",
     "address": {
-      "title": "Office address",
+      "title": "Office Address",
       "content": "13 Unirii Street\nZalău 457246\nRomania"
     },
     "email": {
@@ -19,6 +29,10 @@
     "phone": {
       "title": "Phone",
       "content": "+40 740 245 886"
-    }
+    },
+    "mapAlt": "Office map"
+  },
+  "footer": {
+    "copyright": "© {{year}} Timea Kovacs Law Office. All rights reserved."
   }
 }

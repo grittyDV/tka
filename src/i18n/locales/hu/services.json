@@ -1,0 +1,38 @@
+{
+  "title": "Szakterületeink",
+  "learnMore": "További információ",
+  "items": [
+    {
+      "title": "Ingatlan ügyek",
+      "description": "Adásvételi szerződések, bérleti jogviszonyok."
+    },
+    {
+      "title": "Családjog",
+      "description": "Házassági vagyonjog, öröklési ügyek."
+    },
+    {
+      "title": "Szerződések",
+      "description": "Szerződések készítése és véleményezése."
+    },
+    {
+      "title": "Kártérítési jog",
+      "description": "Személyi és vagyoni károk megtérítése."
+    },
+    {
+      "title": "Munkajog",
+      "description": "Munkaszerződések, munkajogi viták."
+    },
+    {
+      "title": "Társasági jog",
+      "description": "Cégalapítás, változásbejelentés."
+    },
+    {
+      "title": "Követeléskezelés",
+      "description": "Peres és peren kívüli ügyek."
+    },
+    {
+      "title": "Adatvédelem",
+      "description": "GDPR megfelelés, szabályzatok készítése."
+    }
+  ]
+}

@@ -1,13 +1,23 @@
 {
   "title": "Kapcsolatfelvétel",
   "form": {
-    "name": "Név",
-    "email": "Email cím",
-    "message": "Üzenet",
-    "required": "Kötelező mező",
-    "submit": "Üzenet küldése"
+    "name": {
+      "label": "Név",
+      "placeholder": "Az Ön neve"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Az Ön email címe"
+    },
+    "message": {
+      "label": "Üzenet",
+      "placeholder": "Az Ön üzenete"
+    },
+    "required": "*Kötelező mezők",
+    "submit": "Üzenet Küldése"
   },
   "info": {
+    "title": "Elérhetőségeink",
     "address": {
       "title": "Irodánk címe",
       "content": "Strada Unirii 13\nZalău 457246\nRománia"
@@ -19,6 +29,10 @@
     "phone": {
       "title": "Telefon",
       "content": "+40 740 245 886"
-    }
+    },
+    "mapAlt": "Iroda térképe"
+  },
+  "footer": {
+    "copyright": "© {{year}} Kovács Timea Ügyvédi Iroda. Minden jog fenntartva."
   }
 }

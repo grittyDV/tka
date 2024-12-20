@@ -1,13 +1,23 @@
 {
   "title": "Contact",
   "form": {
-    "name": "Nume",
-    "email": "Adresă de email",
-    "message": "Mesaj",
-    "required": "Câmp obligatoriu",
-    "submit": "Trimite mesajul"
+    "name": {
+      "label": "Nume",
+      "placeholder": "Numele dumneavoastră"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Adresa dumneavoastră de email"
+    },
+    "message": {
+      "label": "Mesaj",
+      "placeholder": "Mesajul dumneavoastră"
+    },
+    "required": "*Câmpuri obligatorii",
+    "submit": "Trimite Mesajul"
   },
   "info": {
+    "title": "Informații de Contact",
     "address": {
       "title": "Adresa biroului",
       "content": "Strada Unirii 13\nZalău 457246\nRomânia"
@@ -19,6 +29,10 @@
     "phone": {
       "title": "Telefon",
       "content": "+40 740 245 886"
-    }
+    },
+    "mapAlt": "Harta biroului"
+  },
+  "footer": {
+    "copyright": "© {{year}} Cabinet de Avocat Timea Kovacs. Toate drepturile rezervate."
   }
 }

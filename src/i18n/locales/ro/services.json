@@ -1,45 +1,38 @@
 {
   "title": "Domenii de Practică",
+  "learnMore": "Mai multe informații",
   "items": [
     {
       "title": "Drept Imobiliar",
-      "description": "Contracte de vânzare-cumpărare, relații de închiriere.",
-      "learnMore": "Mai multe informații"
+      "description": "Contracte de vânzare-cumpărare, relații de închiriere."
     },
     {
       "title": "Dreptul Familiei",
-      "description": "Dreptul matrimonial, succesiuni.",
-      "learnMore": "Mai multe informații"
+      "description": "Dreptul matrimonial, succesiuni."
     },
     {
       "title": "Contracte",
-      "description": "Redactarea și analiza contractelor.",
-      "learnMore": "Mai multe informații"
+      "description": "Redactarea și analiza contractelor."
     },
     {
       "title": "Daune",
-      "description": "Recuperarea daunelor materiale și morale.",
-      "learnMore": "Mai multe informații"
+      "description": "Recuperarea daunelor materiale și morale."
     },
     {
       "title": "Dreptul Muncii",
-      "description": "Contracte de muncă, litigii de muncă.",
-      "learnMore": "Mai multe informații"
+      "description": "Contracte de muncă, litigii de muncă."
     },
     {
       "title": "Drept Societar",
-      "description": "Înființare firme, modificări statutare.",
-      "learnMore": "Mai multe informații"
+      "description": "Înființare firme, modificări statutare."
     },
     {
       "title": "Recuperare Creanțe",
-      "description": "Litigii și proceduri extrajudiciare.",
-      "learnMore": "Mai multe informații"
+      "description": "Litigii și proceduri extrajudiciare."
     },
     {
       "title": "Protecția Datelor",
-      "description": "Conformitate GDPR, elaborare regulamente.",
-      "learnMore": "Mai multe informații"
+      "description": "Conformitate GDPR, elaborare regulamente."
     }
   ]
 }

@@ -1,45 +1,38 @@
 {
   "title": "Practice Areas",
+  "learnMore": "Learn more",
   "items": [
     {
       "title": "Real Estate Law",
-      "description": "Purchase agreements, lease relationships.",
-      "learnMore": "Learn more"
+      "description": "Purchase agreements, lease relationships."
     },
     {
       "title": "Family Law",
-      "description": "Matrimonial property law, inheritance matters.",
-      "learnMore": "Learn more"
+      "description": "Matrimonial property law, inheritance matters."
     },
     {
       "title": "Contracts",
-      "description": "Contract drafting and review.",
-      "learnMore": "Learn more"
+      "description": "Contract drafting and review."
     },
     {
       "title": "Damages",
-      "description": "Material and moral damages recovery.",
-      "learnMore": "Learn more"
+      "description": "Material and moral damages recovery."
     },
     {
       "title": "Labor Law",
-      "description": "Employment contracts, labor disputes.",
-      "learnMore": "Learn more"
+      "description": "Employment contracts, labor disputes."
     },
     {
       "title": "Corporate Law",
-      "description": "Company formation, statutory changes.",
-      "learnMore": "Learn more"
+      "description": "Company formation, statutory changes."
     },
     {
       "title": "Debt Collection",
-      "description": "Litigation and out-of-court procedures.",
-      "learnMore": "Learn more"
+      "description": "Litigation and out-of-court procedures."
     },
     {
       "title": "Data Protection",
-      "description": "GDPR compliance, regulation development.",
-      "learnMore": "Learn more"
+      "description": "GDPR compliance, regulation development."
     }
   ]
 }
