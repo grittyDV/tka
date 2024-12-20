@@ -1,0 +1,24 @@
+{
+  "title": "Kapcsolatfelvétel",
+  "form": {
+    "name": "Név",
+    "email": "Email cím",
+    "message": "Üzenet",
+    "required": "Kötelező mező",
+    "submit": "Üzenet küldése"
+  },
+  "info": {
+    "address": {
+      "title": "Irodánk címe",
+      "content": "Strada Unirii 13\nZalău 457246\nRománia"
+    },
+    "email": {
+      "title": "Email",
+      "content": "kovacstimea@gmail.com"
+    },
+    "phone": {
+      "title": "Telefon",
+      "content": "+40 740 245 886"
+    }
+  }
+}

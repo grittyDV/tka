@@ -1,0 +1,20 @@
+{
+  "title": "Ügyfeleink Mondták",
+  "items": [
+    {
+      "name": "Kovács János",
+      "role": "Ingatlanfejlesztő",
+      "text": "Kiváló szakmai háttérrel rendelkező ügyvédi iroda, amely mindig időben és precízen végzi munkáját."
+    },
+    {
+      "name": "Nagy Éva",
+      "role": "Társasházkezelő",
+      "text": "Megbízható partner a társasházi jogviták rendezésében. Gyors és hatékony megoldásokat kínálnak."
+    },
+    {
+      "name": "Szabó Péter",
+      "role": "Vállalkozó",
+      "text": "Szerződéses ügyekben nyújtott támogatásuk kiemelkedő, szakértelmük megkérdőjelezhetetlen."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "What Our Clients Say",
+  "items": [
+    {
+      "name": "John Kovacs",
+      "role": "Real Estate Developer",
+      "text": "Law office with excellent professional background, always performing their work on time and with precision."
+    },
+    {
+      "name": "Eva Nagy",
+      "role": "Property Manager",
+      "text": "Reliable partner in resolving homeowners association disputes. They offer quick and effective solutions."
+    },
+    {
+      "name": "Peter Szabo",
+      "role": "Entrepreneur",
+      "text": "Their support in contractual matters is outstanding, their expertise is unquestionable."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Contact",
+  "form": {
+    "name": "Nume",
+    "email": "Adresă de email",
+    "message": "Mesaj",
+    "required": "Câmp obligatoriu",
+    "submit": "Trimite mesajul"
+  },
+  "info": {
+    "address": {
+      "title": "Adresa biroului",
+      "content": "Strada Unirii 13\nZalău 457246\nRomânia"
+    },
+    "email": {
+      "title": "Email",
+      "content": "kovacstimea@gmail.com"
+    },
+    "phone": {
+      "title": "Telefon",
+      "content": "+40 740 245 886"
+    }
+  }
+}

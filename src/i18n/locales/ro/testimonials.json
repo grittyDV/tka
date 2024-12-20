@@ -1,0 +1,20 @@
+{
+  "title": "Ce Spun Clienții Noștri",
+  "items": [
+    {
+      "name": "Ioan Kovacs",
+      "role": "Developer Imobiliar",
+      "text": "Cabinet de avocatură cu experiență profesională excelentă, care își desfășoară întotdeauna activitatea la timp și cu precizie."
+    },
+    {
+      "name": "Eva Nagy",
+      "role": "Administrator Asociație",
+      "text": "Partener de încredere în soluționarea disputelor privind asociațiile de proprietari. Oferă soluții rapide și eficiente."
+    },
+    {
+      "name": "Petru Szabo",
+      "role": "Antreprenor",
+      "text": "Suportul lor în chestiuni contractuale este excepțional, expertiza lor este incontestabilă."
+    }
+  ]
+}

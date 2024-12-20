@@ -1,0 +1,24 @@
+{
+  "title": "Contact Us",
+  "form": {
+    "name": "Name",
+    "email": "Email address",
+    "message": "Message",
+    "required": "Required field",
+    "submit": "Send message"
+  },
+  "info": {
+    "address": {
+      "title": "Office address",
+      "content": "13 Unirii Street\nZalău 457246\nRomania"
+    },
+    "email": {
+      "title": "Email",
+      "content": "kovacstimea@gmail.com"
+    },
+    "phone": {
+      "title": "Phone",
+      "content": "+40 740 245 886"
+    }
+  }
+}
