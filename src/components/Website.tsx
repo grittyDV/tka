@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronRight, Linkedin, Facebook, Link } from 'lucide-react';
 import timiPicture from '../assets/timi.jpeg';
-import logo from '../assets/logo.png';
+import logo from '../assets/Group 17.svg';
 import {Service, ServiceCard} from './ServiceCard';
 import FAQSection from './FAQ';
 import { ContactSection } from './Contact';
@@ -107,7 +107,7 @@ const Website = () => {
               className="h-10 w-auto"  // Adjust size as needed
             />
             <div className="text-xl font-bold text-indigo-800">
-              Kovács Timea Ügyvédi Iroda
+              Ügyvédi Iroda
             </div>
           </div>
             
@@ -128,7 +128,7 @@ const Website = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between pb-12 md:pb-24">
             <div className="md:w-1/2 text-left md:pr-12">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Személyes és <span className="text-indigo-800">szakértő</span> jogi képviselet</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6"><span className="text-indigo-800">Személyre </span> szabott jogi képviselet</h1>
               <p className="text-lg mb-8 text-gray-600">
                 Személyre szabott jogi megoldások magánszemélyek és vállalkozások részére, 15 éves szakmai tapasztalattal. Célom az Ön jogainak hatékony védelme és érdekeinek képviselete.
               </p>

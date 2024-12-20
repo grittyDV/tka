@@ -5,8 +5,11 @@
 /.pnp
 .pnp.js
 /.firebase
+/public
+/build
 
 .firebase*
+.tailwind*
 
 # testing
 /coverage
