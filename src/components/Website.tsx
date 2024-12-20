@@ -3,11 +3,19 @@ import { useTranslation } from 'react-i18next';
 import { ChevronRight, Mail, Phone, MapPin, Facebook, Link } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 
+interface ServiceItem {
+  title: string;
+  description: string;
+}
+
 const Website = () => {
   const { t } = useTranslation(['common', 'hero', 'services', 'contact']);
 
   const scrollToContact = () => {
-    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    const contactElement = document.getElementById('contact');
+    if (contactElement) {
+      contactElement.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   // Navigation sections
@@ -15,6 +23,9 @@ const Website = () => {
     key: section,
     label: t(`common.navigation.${section}`)
   }));
+
+  // Get services with type assertion
+  const services = t<ServiceItem[], 'services.items'>('services.items', { returnObjects: true });
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -77,7 +88,7 @@ const Website = () => {
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-8">{t('services.title')}</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {t('services.items', { returnObjects: true }).map((service, index) => (
+            {services.map((service: ServiceItem, index: number) => (
               <div key={index} className="p-6 bg-slate-50 rounded-lg hover:shadow-lg transition-all group">
                 <div className="flex flex-col items-center text-center">
                   <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
