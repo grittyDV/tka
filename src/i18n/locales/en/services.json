@@ -1,0 +1,45 @@
+{
+  "title": "Practice Areas",
+  "items": [
+    {
+      "title": "Real Estate Law",
+      "description": "Purchase agreements, lease relationships.",
+      "learnMore": "Learn more"
+    },
+    {
+      "title": "Family Law",
+      "description": "Matrimonial property law, inheritance matters.",
+      "learnMore": "Learn more"
+    },
+    {
+      "title": "Contracts",
+      "description": "Contract drafting and review.",
+      "learnMore": "Learn more"
+    },
+    {
+      "title": "Damages",
+      "description": "Material and moral damages recovery.",
+      "learnMore": "Learn more"
+    },
+    {
+      "title": "Labor Law",
+      "description": "Employment contracts, labor disputes.",
+      "learnMore": "Learn more"
+    },
+    {
+      "title": "Corporate Law",
+      "description": "Company formation, statutory changes.",
+      "learnMore": "Learn more"
+    },
+    {
+      "title": "Debt Collection",
+      "description": "Litigation and out-of-court procedures.",
+      "learnMore": "Learn more"
+    },
+    {
+      "title": "Data Protection",
+      "description": "GDPR compliance, regulation development.",
+      "learnMore": "Learn more"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "title": "Domenii de Practică",
+  "items": [
+    {
+      "title": "Drept Imobiliar",
+      "description": "Contracte de vânzare-cumpărare, relații de închiriere.",
+      "learnMore": "Mai multe informații"
+    },
+    {
+      "title": "Dreptul Familiei",
+      "description": "Dreptul matrimonial, succesiuni.",
+      "learnMore": "Mai multe informații"
+    },
+    {
+      "title": "Contracte",
+      "description": "Redactarea și analiza contractelor.",
+      "learnMore": "Mai multe informații"
+    },
+    {
+      "title": "Daune",
+      "description": "Recuperarea daunelor materiale și morale.",
+      "learnMore": "Mai multe informații"
+    },
+    {
+      "title": "Dreptul Muncii",
+      "description": "Contracte de muncă, litigii de muncă.",
+      "learnMore": "Mai multe informații"
+    },
+    {
+      "title": "Drept Societar",
+      "description": "Înființare firme, modificări statutare.",
+      "learnMore": "Mai multe informații"
+    },
+    {
+      "title": "Recuperare Creanțe",
+      "description": "Litigii și proceduri extrajudiciare.",
+      "learnMore": "Mai multe informații"
+    },
+    {
+      "title": "Protecția Datelor",
+      "description": "Conformitate GDPR, elaborare regulamente.",
+      "learnMore": "Mai multe informații"
+    }
+  ]
+}
