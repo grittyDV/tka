@@ -12,20 +12,15 @@ const Website = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t, i18n } = useTranslation();
 
-  // Navigation sections with translations
-  const sections = [
-    { key: 'home', label: t('nav.home') },
-    { key: 'services', label: t('nav.services') },
-    { key: 'about', label: t('nav.about') },
-    { key: 'faq', label: t('nav.faq') },
-    { key: 'contact', label: t('nav.contact') }
-  ];
+  // Navigation sections
+  const sections = ['Főoldal', 'Szakterületek', 'Rólam', 'Kérdések', 'Kapcsolat'];
 
   const handleContactSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted');
   };
 
+  // Use translations for legal services
   const legalServices: Service[] = t('services.items', { returnObjects: true });
 
   const scrollToContact = () => {
@@ -35,8 +30,9 @@ const Website = () => {
     }
   };
 
-  const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    i18n.changeLanguage(event.target.value);
+  // Language switcher handler
+  const handleLanguageChange = (newLang: string) => {
+    i18n.changeLanguage(newLang);
   };
 
   return (
@@ -48,48 +44,49 @@ const Website = () => {
             <div className="flex items-center space-x-3">
               <img 
                 src={logo}
-                alt={t('common.logoAlt')} 
+                alt={t('common.firmName')} 
                 className="h-10 w-auto"
               />
               <div className="text-xl font-bold text-indigo-800">
-                {t('common.lawOffice')}
+                {t('common.firmName')}
               </div>
             </div>
             
             {/* Language Selector */}
-            <select
-              onChange={handleLanguageChange}
-              value={i18n.language}
-              className="px-2 py-1 rounded border border-gray-300"
-            >
-              <option value="hu">Magyar</option>
-              <option value="en">English</option>
-              <option value="ro">Română</option>
-            </select>
+            <div className="mr-4">
+              <select
+                onChange={(e) => handleLanguageChange(e.target.value)}
+                value={i18n.language}
+                className="px-2 py-1 rounded border border-gray-300"
+              >
+                <option value="hu">Magyar</option>
+                <option value="en">English</option>
+                <option value="ro">Română</option>
+              </select>
+            </div>
             
             {/* Desktop menu */}
             <div className="hidden md:flex space-x-8">
-              {sections.map(({ key, label }) => (
-                <a 
-                  key={key} 
-                  href={`#${key}`} 
-                  className="text-gray-700 hover:text-indigo-800"
-                >
-                  {label}
-                </a>
-              ))}
+              <a href="#főoldal" className="text-gray-700 hover:text-indigo-800">
+                {t('common.navigation.home')}
+              </a>
+              <a href="#szakterületek" className="text-gray-700 hover:text-indigo-800">
+                {t('common.navigation.services')}
+              </a>
+              <a href="#kapcsolat" className="text-gray-700 hover:text-indigo-800">
+                {t('common.navigation.contact')}
+              </a>
             </div>
           </div>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="pt-24 md:pt-32 bg-slate-50 text-gray-800">
+      <section id="főoldal" className="pt-24 md:pt-32 bg-slate-50 text-gray-800">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between pb-12 md:pb-24">
             <div className="md:w-1/2 text-left md:pr-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                <span className="text-indigo-800">{t('hero.titleHighlight')} </span>
                 {t('hero.title')}
               </h1>
               <p className="text-lg mb-8 text-gray-600">
@@ -107,7 +104,7 @@ const Website = () => {
               <div className="relative w-72 h-72 md:w-[500px] md:h-[500px] bg-white p-4 rounded-lg shadow-lg">
                 <img
                   src={timiPicture}
-                  alt={t('hero.imageAlt')}
+                  alt={t('common.firmName')}
                   className="w-full h-full object-cover rounded-lg"
                 />
               </div>
@@ -117,9 +114,11 @@ const Website = () => {
       </section>
       
       {/* Services Section */}
-      <section id="services" className="py-16 bg-slate-50">
+      <section id="szakterületek" className="py-16 bg-slate-50">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">{t('services.title')}</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            {t('services.title')}
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {legalServices.map((service, index) => (
               <ServiceCard key={index} service={service} />
@@ -128,26 +127,8 @@ const Website = () => {
         </div>
       </section>
 
-      {/* About Me Section */}
-      <section id="about" className="py-16 bg-slate-50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-8">{t('about.title')}</h2>
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <div className="prose prose-lg max-w-none text-gray-600">
-                {t('about.content', { returnObjects: true }).map((paragraph: string, index: number) => (
-                  <p key={index} className={`mb-6 ${index === 0 ? 'text-lg' : ''} ${index === 4 ? 'text-lg font-medium text-indigo-800' : ''}`}>
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      {/* Other sections remain unchanged for now since they're not in the translation files */}
       <FAQSection />
-      
       <ContactSection onSubmit={handleContactSubmit} />
 
       {/* Footer */}
@@ -155,30 +136,18 @@ const Website = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col items-center space-y-4">
             <div className="flex items-center space-x-6">
-              <a 
-                href={t('footer.socialLinks.facebook')} 
-                className="text-gray-300 hover:text-white transition-colors"
-                aria-label="Facebook"
-              >
+              <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 <Facebook className="w-6 h-6" />
               </a>
-              <a 
-                href={t('footer.socialLinks.linkedin')} 
-                className="text-gray-300 hover:text-white transition-colors"
-                aria-label="LinkedIn"
-              >
+              <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a 
-                href={t('footer.socialLinks.website')} 
-                className="text-gray-300 hover:text-white transition-colors"
-                aria-label="Website"
-              >
+              <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 <Link className="w-6 h-6" />
               </a>
             </div>
             <p className="text-gray-400 text-sm">
-              {t('footer.copyright', { year: new Date().getFullYear() })}
+              {t('contact.footer.copyright', { year: new Date().getFullYear() })}
             </p>
           </div>
         </div>
