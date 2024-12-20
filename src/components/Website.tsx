@@ -9,7 +9,7 @@ interface ServiceItem {
 }
 
 const Website = () => {
-  const { t } = useTranslation(['common', 'hero', 'services', 'contact']);
+  const { t } = useTranslation();
 
   const scrollToContact = () => {
     const contactElement = document.getElementById('contact');
@@ -25,8 +25,7 @@ const Website = () => {
   }));
 
   // Get services with proper type casting and array checking
-  const servicesData = t('services.items', { returnObjects: true });
-  const services = Array.isArray(servicesData) ? servicesData : [];
+  const servicesData = t('services.items', { returnObjects: true }) as ServiceItem[];
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -89,7 +88,7 @@ const Website = () => {
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-8">{t('services.title')}</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {services.map((service: ServiceItem) => (
+            {servicesData.map((service: ServiceItem) => (
               <div key={service.title} className="p-6 bg-slate-50 rounded-lg hover:shadow-lg transition-all group">
                 <div className="flex flex-col items-center text-center">
                   <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
@@ -160,7 +159,7 @@ const Website = () => {
                   <MapPin className="mr-4 text-indigo-800" />
                   <div>
                     <h3 className="font-semibold mb-1">{t('contact.info.address.title')}</h3>
-                    <p className="text-gray-600">{t('contact.info.address.content')}</p>
+                    <p className="text-gray-600 whitespace-pre-line">{t('contact.info.address.content')}</p>
                   </div>
                 </div>
                 <div className="flex items-start">
