@@ -9,7 +9,10 @@ interface ServiceItem {
 }
 
 const Website = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  // Get the current language's services directly from i18n
+  const services = i18n.getResource(i18n.language, 'services', 'items') as ServiceItem[];
 
   const scrollToContact = () => {
     const contactElement = document.getElementById('contact');
@@ -23,9 +26,6 @@ const Website = () => {
     key: section,
     label: t(`common.navigation.${section}`)
   }));
-
-  // Get services with proper type casting and array checking
-  const servicesData = t('services.items', { returnObjects: true }) as ServiceItem[];
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -88,7 +88,7 @@ const Website = () => {
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-8">{t('services.title')}</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {servicesData.map((service: ServiceItem) => (
+            {services && services.map((service: ServiceItem) => (
               <div key={service.title} className="p-6 bg-slate-50 rounded-lg hover:shadow-lg transition-all group">
                 <div className="flex flex-col items-center text-center">
                   <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
