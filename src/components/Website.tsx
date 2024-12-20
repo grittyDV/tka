@@ -1,98 +1,20 @@
-import React, { useState } from 'react';
-import { ChevronRight, Linkedin, Facebook, Link } from 'lucide-react';
-import timiPicture from '../assets/timi.jpeg';
-import logo from '../assets/Group 17.svg';
-import {Service, ServiceCard} from './ServiceCard';
-import FAQSection from './FAQ';
-import { ContactSection } from './Contact';
-
-
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { ChevronRight, Mail, Phone, MapPin, Facebook, Link } from 'lucide-react';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Website = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  // Navigation sections// Navigation sections
-  const sections = ['Főoldal', 'Szakterületek', 'Rólam', 'Kérdések', 'Kapcsolat'];
-  const handleContactSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted');
-  };
-
-  const legalServices: Service[] = [
-    {
-      "title": "Öröklési és Vagyonjog",
-      "mainPoints": [
-        "Örökösödési eljárások lebonyolítása",
-        "Földügyek, telekkönyvi és kataszteri hivatali ügyintézés",
-        "Vagyonmegosztás és tulajdonjogi viták kezelése"
-      ]
-    },
-    {
-      "title": "Családjog",
-      "mainPoints": [
-        "Válások és kapcsolódó jogi eljárások",
-        "Gyermekelhelyezés, tartásdíj és gyereklátogatási idő megállapítása",
-        "Távoltartási kérelmek és apasági perek kezelése"
-      ]
-    },
-    {
-      "title": "Kereskedelmi jog",
-      "mainPoints": [
-        "Kereskedelmi szerződések megszerkesztése és egyeztetése",
-        "Követelések behajtása és bírósági ítéletek kényszervégrehajtása",
-        "Fizetési meghagyásos és csődeljárások jogi képviselete"
-      ]
-    },
-    {
-      title: 'Biztosítási jog',
-      mainPoints: [
-        'Biztosítási jogok védelme és érvényesítése',
-        'Képviselet biztosítási vitákban',
-        'Jogi tanácsadás biztosítási ügyekben'
-      ]
-    },
-    {
-      title: 'Szabálysértési jog',
-      mainPoints: [
-        'Szabálysértési jegyzőkönyvek elleni panaszok',
-        'Képviselet bíróság előtt szabálysértési ügyekben',
-        'Bírságok elleni jogorvoslatok intézése'
-      ]
-    },
-    {
-      title: 'Büntetőjog',
-      mainPoints: [
-        'Védelem a nyomozati és bírósági szakaszban',
-        'Bűnügyi panaszok megszerkesztése és előterjesztése',
-        'Jogi képviselet bűntető eljárások során'
-      ]
-    },
-    {
-      title: 'Munkajog',
-      mainPoints: [
-        'Munkaügyi konfliktusok rendezése',
-        'Munkajogi képviselet bíróság előtt',
-        'Munkaügyi megállapodások és jogviták kezelése'
-      ]
-    },
-    {
-      title: 'Közigazgatási jog',
-      mainPoints: [
-        'Jogi képviselet romániai intézmények előtt',
-        'Peres ügyek intézése a közigazgatási törvényszéken',
-        'Hatósági határozatok elleni fellebbezések'
-      ]
-    }
-  ];
+  const { t } = useTranslation(['common', 'hero', 'services', 'contact']);
 
   const scrollToContact = () => {
-    const element = document.getElementById('kapcsolat');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
   };
+
+  // Navigation sections
+  const sections = ['home', 'services', 'contact'].map(section => ({
+    key: section,
+    label: t(`common.navigation.${section}`)
+  }));
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -100,50 +22,47 @@ const Website = () => {
       <header className="fixed w-full bg-white shadow-md z-50">
         <nav className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-          <div className="flex items-center space-x-3">
-            <img 
-              src={logo}
-              alt="Kovács Timea Ügyvédi Iroda Logo" 
-              className="h-10 w-auto"  // Adjust size as needed
-            />
-            <div className="text-xl font-bold text-indigo-800">
-              Ügyvédi Iroda
-            </div>
-          </div>
+            <div className="text-xl font-bold text-indigo-800">{t('common.firmName')}</div>
             
             {/* Desktop menu */}
             <div className="hidden md:flex space-x-8">
               {sections.map((section) => (
-                <a key={section} href={`#${section.toLowerCase()}`} className="text-gray-700 hover:text-indigo-800">
-                  {section}
+                <a 
+                  key={section.key} 
+                  href={`#${section.key}`} 
+                  className="text-gray-700 hover:text-indigo-800"
+                >
+                  {section.label}
                 </a>
               ))}
             </div>
+
+            <LanguageSwitcher />
           </div>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <section id="főoldal" className="pt-24 md:pt-32 bg-slate-50 text-gray-800">
+      <section id="home" className="pt-24 md:pt-32 bg-slate-50 text-gray-800">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between pb-12 md:pb-24">
             <div className="md:w-1/2 text-left md:pr-12">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6"><span className="text-indigo-800">Személyre </span> szabott jogi képviselet</h1>
-              <p className="text-lg mb-8 text-gray-600">
-                Személyre szabott jogi megoldások magánszemélyek és vállalkozások részére, 15 éves szakmai tapasztalattal. Célom az Ön jogainak hatékony védelme és érdekeinek képviselete.
-              </p>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                <span className="text-indigo-800">{t('hero.title')}</span>
+              </h1>
+              <p className="text-lg mb-8 text-gray-600">{t('hero.description')}</p>
               <button
                 onClick={scrollToContact}
                 className="bg-indigo-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-900 transition-colors flex items-center"
               >
-                Időpontfoglalás
+                {t('hero.ctaButton')}
                 <ChevronRight className="ml-2" />
               </button>
             </div>
             <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
               <div className="relative w-72 h-72 md:w-[500px] md:h-[500px] bg-white p-4 rounded-lg shadow-lg">
                 <img
-                  src={timiPicture}
+                  src="/api/placeholder/500/500"
                   alt="Kovács Timea"
                   className="w-full h-full object-cover rounded-lg"
                 />
@@ -152,86 +71,131 @@ const Website = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Services Section */}
-    <section id="szakterületek" className="py-16 bg-slate-50">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">Szakterületek</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {/* All services in a single grid */}
-          {legalServices.map((service, index) => (
-            <ServiceCard key={index} service={service} />
-          ))}
-          {/* Add an empty div to fill the last spot in the grid */}
-          </div>
-      </div>
-    </section>
-      {/* About Me Section */}
-      <section id="rólam" className="py-16 bg-slate-50">
+      <section id="services" className="py-12 bg-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-8">Rólam</h2>
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <div className="prose prose-lg max-w-none text-gray-600">
-                <p className="mb-6 text-lg">
-                  Minden jogi ügy mögött egy ember áll, aki megoldást keres. Ha tapasztalt és elkötelezett ügyvédet keres, aki megértéssel és szakértelemmel képviseli Önt, jó helyen jár.
-                </p>
-                <p className="mb-6">
-                  2010-ben fejeztem be jogi tanulmányaimat a kolozsvári Babeș-Bolyai Tudományegyetem Jogi Karán. Mesteri fokozatomat Közösségi magánjog szakterületen szereztem 2011-ben, a Pécsi Tudományegyetem és a Babeș-Bolyai Tudományegyetem közös képzésének keretében.
-                </p>
-                <p className="mb-6">
-                  2013 óta büszkén képviselem ügyfeleimet a Szilágy megyei Ügyvédi Kamara tagjaként.
-                </p>
-                <p className="mb-6">
-                  A jog iránti szenvedélyem és elkötelezettségem lehetővé tette, hogy számos sikeres ügyet vigyek végig, és megerősítsem ügyfeleim bizalmát. Hiszek abban, hogy a jogi kihívások megoldása nem csupán szakmai tudást, hanem empátiát, megértést és személyre szabott megközelítést is igényel.
-                </p>
-                <p className="text-lg font-medium text-indigo-800">
-                  Bízzon meg bennem, hogy jogi problémájára hatékony és emberközpontú megoldást találjunk!
-                </p>
+          <h2 className="text-3xl font-bold text-center mb-8">{t('services.title')}</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {t('services.items', { returnObjects: true }).map((service, index) => (
+              <div key={index} className="p-6 bg-slate-50 rounded-lg hover:shadow-lg transition-all group">
+                <div className="flex flex-col items-center text-center">
+                  <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
+                  <p className="text-sm text-gray-600 mb-4">{service.description}</p>
+                  <a
+                    href="#"
+                    className="text-indigo-800 hover:text-indigo-900 text-sm font-medium flex items-center"
+                  >
+                    {t('services.learnMore')}
+                    <ChevronRight className="w-4 h-4 ml-1" />
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* Contact Form */}
+            <div>
+              <h2 className="text-3xl font-bold mb-8">{t('contact.title')}</h2>
+              <form className="space-y-6">
+                <div>
+                  <label className="block text-gray-700 mb-2">{t('contact.form.name.label')}*</label>
+                  <input
+                    type="text"
+                    placeholder={t('contact.form.name.placeholder')}
+                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-indigo-800"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-gray-700 mb-2">{t('contact.form.email.label')}*</label>
+                  <input
+                    type="email"
+                    placeholder={t('contact.form.email.placeholder')}
+                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-indigo-800"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-gray-700 mb-2">{t('contact.form.message.label')}*</label>
+                  <textarea
+                    placeholder={t('contact.form.message.placeholder')}
+                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-indigo-800 h-32"
+                    required
+                  ></textarea>
+                </div>
+                <p className="text-sm text-gray-500">{t('contact.form.required')}</p>
+                <button
+                  type="submit"
+                  className="bg-indigo-800 text-white px-6 py-3 rounded-lg hover:bg-indigo-900 transition-colors"
+                >
+                  {t('contact.form.submit')}
+                </button>
+              </form>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h2 className="text-3xl font-bold mb-8">{t('contact.info.title')}</h2>
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <MapPin className="mr-4 text-indigo-800" />
+                  <div>
+                    <h3 className="font-semibold mb-1">{t('contact.info.address.title')}</h3>
+                    <p className="text-gray-600">{t('contact.info.address.content')}</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <Mail className="mr-4 text-indigo-800" />
+                  <div>
+                    <h3 className="font-semibold mb-1">{t('contact.info.email.title')}</h3>
+                    <p className="text-gray-600">{t('contact.info.email.content')}</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <Phone className="mr-4 text-indigo-800" />
+                  <div>
+                    <h3 className="font-semibold mb-1">{t('contact.info.phone.title')}</h3>
+                    <p className="text-gray-600">{t('contact.info.phone.content')}</p>
+                  </div>
+                </div>
+
+                {/* Map placeholder */}
+                <div className="mt-8">
+                  <img
+                    src="/api/placeholder/600/300"
+                    alt={t('contact.info.mapAlt')}
+                    className="w-full rounded-lg"
+                  />
+                </div>
+
+                {/* Social Media Links */}
+                <div className="flex space-x-4 mt-8">
+                  <a href="#" className="text-gray-600 hover:text-indigo-800">
+                    <Facebook />
+                  </a>
+                  <a href="#" className="text-gray-600 hover:text-indigo-800">
+                    <Link />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <FAQSection/>
-      {/* Contact Section */}
-      
-      <ContactSection onSubmit={handleContactSubmit} />
-
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8">
-  <div className="container mx-auto px-6">
-    <div className="flex flex-col items-center space-y-4">
-      <div className="flex items-center space-x-6">
-        <a 
-          href="#" 
-          className="text-gray-300 hover:text-white transition-colors"
-          aria-label="Facebook"
-        >
-          <Facebook className="w-6 h-6" />
-        </a>
-        <a 
-          href="#" 
-          className="text-gray-300 hover:text-white transition-colors"
-          aria-label="LinkedIn"
-        >
-          <Linkedin className="w-6 h-6" />
-        </a>
-        <a 
-          href="#" 
-          className="text-gray-300 hover:text-white transition-colors"
-          aria-label="Website"
-        >
-          <Link className="w-6 h-6" />
-        </a>
-      </div>
-      <p className="text-gray-400 text-sm">
-        &copy; {new Date().getFullYear()} Kovács Timea Ügyvédi Iroda. Minden jog fenntartva.
-      </p>
-    </div>
-  </div>
-</footer>
+        <div className="container mx-auto px-6 text-center">
+          <p>{t('contact.footer.copyright', { year: new Date().getFullYear() })}</p>
+        </div>
+      </footer>
     </div>
   );
 };
