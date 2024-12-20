@@ -25,7 +25,7 @@ const Website = () => {
   }));
 
   // Get services with type assertion
-  const services = t<ServiceItem[], 'services.items'>('services.items', { returnObjects: true });
+  const services = t<ServiceItem[], 'translation', 'services.items'>('services.items', { returnObjects: true });
 
   return (
     <div className="min-h-screen bg-gray-50">
