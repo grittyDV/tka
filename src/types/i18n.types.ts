@@ -4,7 +4,6 @@ export interface Translations {
     navigation: {
       home: string;
       services: string;
-      testimonials: string;
       contact: string;
     };
   };
@@ -19,14 +18,6 @@ export interface Translations {
       title: string;
       description: string;
       learnMore: string;
-    }>;
-  };
-  testimonials: {
-    title: string;
-    items: Array<{
-      name: string;
-      role: string;
-      text: string;
     }>;
   };
   contact: {

@@ -10,25 +10,22 @@ i18next
         common: require('./locales/hu/common.json'),
         hero: require('./locales/hu/hero.json'),
         services: require('./locales/hu/services.json'),
-        testimonials: require('./locales/hu/testimonials.json'),
         contact: require('./locales/hu/contact.json'),
       },
       ro: {
         common: require('./locales/ro/common.json'),
         hero: require('./locales/ro/hero.json'),
         services: require('./locales/ro/services.json'),
-        testimonials: require('./locales/ro/testimonials.json'),
         contact: require('./locales/ro/contact.json'),
       },
       en: {
         common: require('./locales/en/common.json'),
         hero: require('./locales/en/hero.json'),
         services: require('./locales/en/services.json'),
-        testimonials: require('./locales/en/testimonials.json'),
         contact: require('./locales/en/contact.json'),
       },
     },
-    ns: ['common', 'hero', 'services', 'testimonials', 'contact'],
+    ns: ['common', 'hero', 'services', 'contact'],
     defaultNS: 'common',
   });
 
