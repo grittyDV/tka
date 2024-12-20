@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronRight, Linkedin, Facebook, Link } from 'lucide-react';
 import timiPicture from '../assets/timi.jpeg';
-import logo from '../assets/Group 17.svg';
+import logo from '../assets/Group 17.png';
 import {Service, ServiceCard} from './ServiceCard';
 import FAQSection from './FAQ';
 import { ContactSection } from './Contact';
