@@ -1,3 +1,20 @@
+export interface ServiceItem {
+  title: string;
+  description: string;
+}
+
+type ServiceItems = {
+  realEstate: ServiceItem;
+  familyLaw: ServiceItem;
+  contracts: ServiceItem;
+  compensation: ServiceItem;
+  laborLaw: ServiceItem;
+  corporateLaw: ServiceItem;
+  debtCollection: ServiceItem;
+  dataProtection: ServiceItem;
+  learnMore: string;
+}
+
 export interface Translation {
   header: {
     title: string;
@@ -16,41 +33,7 @@ export interface Translation {
   };
   services: {
     title: string;
-    items: {
-      realEstate: {
-        title: string;
-        description: string;
-      };
-      familyLaw: {
-        title: string;
-        description: string;
-      };
-      contracts: {
-        title: string;
-        description: string;
-      };
-      compensation: {
-        title: string;
-        description: string;
-      };
-      laborLaw: {
-        title: string;
-        description: string;
-      };
-      corporateLaw: {
-        title: string;
-        description: string;
-      };
-      debtCollection: {
-        title: string;
-        description: string;
-      };
-      dataProtection: {
-        title: string;
-        description: string;
-      };
-      learnMore: string;
-    };
+    items: ServiceItems;
   };
   contact: {
     title: string;
