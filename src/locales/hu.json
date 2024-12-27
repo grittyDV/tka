@@ -10,6 +10,7 @@
   },
   "hero": {
     "title": "Személyes és szakértő jogi képviselet",
+    "highlight": "szakértő",
     "description": "Személyre szabott jogi megoldások magánszemélyek és vállalkozások részére, 15 éves szakmai tapasztalattal. Célom az Ön jogainak hatékony védelme és érdekeinek képviselete.",
     "cta": "Időpontfoglalás"
   },
@@ -86,17 +87,20 @@
     "form": {
       "name": {
         "label": "Név",
+        "placeholder": "Az Ön neve",
         "required": true
       },
       "email": {
         "label": "Email",
+        "placeholder": "Az Ön email címe",
         "required": true
       },
       "message": {
         "label": "Üzenet",
+        "placeholder": "Írja le miben segíthetünk",
         "required": true
       },
-      "requiredNote": "Kötelező mezők",
+      "requiredNote": "*Kötelező mezők",
       "submit": "Üzenet Küldése"
     },
     "info": {
@@ -122,6 +126,6 @@
     }
   },
   "footer": {
-    "copyright": "Minden jog fenntartva."
+    "copyright": "© {{year}} Kovács Timea Ügyvédi Iroda. Minden jog fenntartva."
   }
 }
