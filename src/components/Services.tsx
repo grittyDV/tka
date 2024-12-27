@@ -1,6 +1,7 @@
 import React from 'react';
 import { Home, Users, FileText, Scale, Briefcase, Building2, BadgeDollarSign, ShieldCheck, ChevronRight } from 'lucide-react';
 import { useTranslations } from '../contexts/TranslationContext';
+import type { ServiceItem } from '../types/translations';
 
 type ServiceKey = 'realEstate' | 'familyLaw' | 'contracts' | 'compensation' | 'laborLaw' | 'corporateLaw' | 'debtCollection' | 'dataProtection';
 
@@ -13,15 +14,18 @@ const serviceIcons = {
   corporateLaw: Building2,
   debtCollection: BadgeDollarSign,
   dataProtection: ShieldCheck,
-};
+} as const;
+
+type ServiceEntry = [ServiceKey, ServiceItem];
+
+function isServiceEntry(entry: [string, unknown]): entry is ServiceEntry {
+  const [key] = entry;
+  return key !== 'learnMore' && key in serviceIcons;
+}
 
 export const Services = () => {
   const translations = useTranslations();
-
-  // Filter out the learnMore key and only keep service items
-  const serviceItems = Object.entries(translations.services.items).filter(
-    ([key]): key is ServiceKey => key !== 'learnMore' && key in serviceIcons
-  );
+  const serviceItems = Object.entries(translations.services.items).filter(isServiceEntry);
 
   return (
     <section id="services" className="py-12 bg-white">
