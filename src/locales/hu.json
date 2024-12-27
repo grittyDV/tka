@@ -1,0 +1,127 @@
+{
+  "header": {
+    "title": "Kovács Timea Ügyvédi Iroda",
+    "navigation": {
+      "home": "Főoldal",
+      "services": "Szakterületek",
+      "testimonials": "Vélemények",
+      "contact": "Kapcsolat"
+    }
+  },
+  "hero": {
+    "title": "Személyes és szakértő jogi képviselet",
+    "description": "Személyre szabott jogi megoldások magánszemélyek és vállalkozások részére, 15 éves szakmai tapasztalattal. Célom az Ön jogainak hatékony védelme és érdekeinek képviselete.",
+    "cta": "Időpontfoglalás"
+  },
+  "services": {
+    "title": "Szakterületeink",
+    "items": {
+      "realEstate": {
+        "title": "Ingatlan ügyek",
+        "description": "Adásvételi szerződések, bérleti jogviszonyok."
+      },
+      "familyLaw": {
+        "title": "Családjog",
+        "description": "Házassági vagyonjog, öröklési ügyek."
+      },
+      "contracts": {
+        "title": "Szerződések",
+        "description": "Szerződések készítése és véleményezése."
+      },
+      "compensation": {
+        "title": "Kártérítési jog",
+        "description": "Személyi és vagyoni károk megtérítése."
+      },
+      "laborLaw": {
+        "title": "Munkajog",
+        "description": "Munkaszerződések, munkajogi viták."
+      },
+      "corporateLaw": {
+        "title": "Társasági jog",
+        "description": "Cégalapítás, változásbejelentés."
+      },
+      "debtCollection": {
+        "title": "Követeléskezelés",
+        "description": "Peres és peren kívüli ügyek."
+      },
+      "dataProtection": {
+        "title": "Adatvédelem",
+        "description": "GDPR megfelelés, szabályzatok készítése."
+      },
+      "learnMore": "További információ"
+    }
+  },
+  "testimonials": {
+    "title": "Ügyfeleink Mondták",
+    "items": [
+      {
+        "name": "Kovács János",
+        "role": "Ingatlanfejlesztő",
+        "text": "Kiváló szakmai háttérrel rendelkező ügyvédi iroda, amely mindig időben és precízen végzi munkáját."
+      },
+      {
+        "name": "Nagy Éva",
+        "role": "Társasházkezelő",
+        "text": "Megbízható partner a társasházi jogviták rendezésében. Gyors és hatékony megoldásokat kínálnak."
+      },
+      {
+        "name": "Szabó Péter",
+        "role": "Vállalkozó",
+        "text": "Szerződéses ügyekben nyújtott támogatásuk kiemelkedő, szakértelmük megkérdőjelezhetetlen."
+      },
+      {
+        "name": "Kiss Mária",
+        "role": "Magánszemély",
+        "text": "Családjogi ügyemben nyújtott segítségük és empátiájuk példaértékű volt."
+      },
+      {
+        "name": "Tóth István",
+        "role": "Cégvezető",
+        "text": "Professzionális hozzáállás, személyre szabott megoldások. Csak ajánlani tudom."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kapcsolatfelvétel",
+    "form": {
+      "name": {
+        "label": "Név",
+        "required": true
+      },
+      "email": {
+        "label": "Email",
+        "required": true
+      },
+      "message": {
+        "label": "Üzenet",
+        "required": true
+      },
+      "requiredNote": "Kötelező mezők",
+      "submit": "Üzenet Küldése"
+    },
+    "info": {
+      "title": "Elérhetőségeink",
+      "address": {
+        "title": "Irodánk címe",
+        "street": "Strada Unirii 13",
+        "city": "Zalău",
+        "postalCode": "457246",
+        "country": "Románia"
+      },
+      "email": {
+        "title": "Email",
+        "value": "kovacstimea@gmail.com"
+      },
+      "phone": {
+        "title": "Telefon",
+        "value": "+40 740 245 886"
+      },
+      "map": {
+        "alt": "Iroda térképe"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "Minden jog fenntartva."
+  }
+}
