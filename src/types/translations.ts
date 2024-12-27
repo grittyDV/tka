@@ -15,12 +15,19 @@ type ServiceItems = {
   learnMore: string;
 }
 
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 export interface Translation {
   header: {
     title: string;
     navigation: {
       home: string;
+      about: string;
       services: string;
+      faq: string;
       contact: string;
     };
   };
@@ -31,9 +38,26 @@ export interface Translation {
     cta: string;
     imageAlt: string;
   };
+  about: {
+    title: string;
+    description: string;
+    expertise: {
+      title: string;
+      points: string[];
+    };
+    values: {
+      title: string;
+      points: string[];
+    };
+  };
   services: {
     title: string;
     items: ServiceItems;
+  };
+  faq: {
+    title: string;
+    description: string;
+    items: FAQItem[];
   };
   contact: {
     title: string;
