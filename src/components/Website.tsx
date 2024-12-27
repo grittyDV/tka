@@ -41,7 +41,7 @@ const Website = () => {
               className="h-10 w-auto"  // Adjust size as needed
             />
             <div className="text-xl font-bold text-indigo-800">
-              Ügyvédi Iroda
+              Kovács Timea Ügyvédi Iroda
             </div>
           </div>
             
