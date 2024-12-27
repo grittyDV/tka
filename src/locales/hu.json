@@ -1,6 +1,33 @@
 {
+  "header": {
+    "title": "Kovács Timea Ügyvédi Iroda",
+    "navigation": {
+      "home": "Főoldal",
+      "services": "Szakterületek",
+      "aboutme": "Rólam",
+      "faq": "Kérdések",
+      "contact": "Kapcsolat"
+    }
+  },
+  "hero": {
+    "title": "Személyes és szakértő jogi képviselet",
+    "highlight": "szakértő",
+    "description": "Személyre szabott jogi megoldások magánszemélyek és vállalkozások részére, 15 éves szakmai tapasztalattal. Célom az Ön jogainak hatékony védelme és érdekeinek képviselete.",
+    "cta": "Időpontfoglalás",
+    "imageAlt": "Kovács Timea"
+  },
+  "aboutme":{
+    "title": "Rólam",
+    "paragraphs": [
+      "Minden jogi ügy mögött egy ember áll, aki megoldást keres. Ha tapasztalt és elkötelezett ügyvédet keres, aki megértéssel és szakértelemmel képviseli Önt, jó helyen jár.",
+      "2010-ben fejeztem be jogi tanulmányaimat a kolozsvári Babeș-Bolyai Tudományegyetem Jogi Karán. Mesteri fokozatomat Közösségi magánjog szakterületen szereztem 2011-ben, a Pécsi Tudományegyetem és a Babeș-Bolyai Tudományegyetem közös képzésének keretében.",
+      "2013 óta büszkén képviselem ügyfeleimet a Szilágy megyei Ügyvédi Kamara tagjaként.",
+      "A jog iránti szenvedélyem és elkötelezettségem lehetővé tette, hogy számos sikeres ügyet vigyek végig, és megerősítsem ügyfeleim bizalmát. Hiszek abban, hogy a jogi kihívások megoldása nem csupán szakmai tudást, hanem empátiát, megértést és személyre szabott megközelítést is igényel."
+    ],
+    "closing": "Bízzon meg bennem, hogy jogi problémájára hatékony és emberközpontú megoldást találjunk!"
+  },
   "services": {
-    "title": "Szakterületeink",
+    "title": "Szakterületek",
     "items": {
       "inheritance": {
         "title": "Öröklési és Vagyonjog",

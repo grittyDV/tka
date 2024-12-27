@@ -1,6 +1,7 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
 import { useTranslations } from '../contexts/TranslationContext';
+import timi from '../assets/timi.jpeg'
 
 export const Hero = () => {
   const translations = useTranslations();
@@ -34,7 +35,7 @@ export const Hero = () => {
           <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
             <div className="relative w-72 h-72 md:w-96 md:h-96 bg-white p-4 rounded-lg shadow-lg">
               <img
-                src="/api/placeholder/500/500"
+                src={timi}
                 alt={translations.hero.imageAlt}
                 className="w-full h-full object-cover rounded-lg"
               />
