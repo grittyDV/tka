@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { ChevronRight, Linkedin, Facebook, Link } from 'lucide-react';
 import timiPicture from '../assets/timi.jpeg';
 import logo from '../assets/Group 17.png';
-import {Service, ServiceCard} from './ServiceCard';
 import FAQSection from './FAQ';
 import { ContactSection } from './Contact';
+import AboutSection from './About';
+import { Services } from './Service';
 
 
 
@@ -19,74 +20,7 @@ const Website = () => {
     // Handle form submission logic here
     console.log('Form submitted');
   };
-
-  const legalServices: Service[] = [
-    {
-      "title": "Öröklési és Vagyonjog",
-      "mainPoints": [
-        "Örökösödési eljárások lebonyolítása",
-        "Földügyek, telekkönyvi és kataszteri hivatali ügyintézés",
-        "Vagyonmegosztás és tulajdonjogi viták kezelése"
-      ]
-    },
-    {
-      "title": "Családjog",
-      "mainPoints": [
-        "Válások és kapcsolódó jogi eljárások",
-        "Gyermekelhelyezés, tartásdíj és gyereklátogatási idő megállapítása",
-        "Távoltartási kérelmek és apasági perek kezelése"
-      ]
-    },
-    {
-      "title": "Kereskedelmi jog",
-      "mainPoints": [
-        "Kereskedelmi szerződések megszerkesztése és egyeztetése",
-        "Követelések behajtása és bírósági ítéletek kényszervégrehajtása",
-        "Fizetési meghagyásos és csődeljárások jogi képviselete"
-      ]
-    },
-    {
-      title: 'Biztosítási jog',
-      mainPoints: [
-        'Biztosítási jogok védelme és érvényesítése',
-        'Képviselet biztosítási vitákban',
-        'Jogi tanácsadás biztosítási ügyekben'
-      ]
-    },
-    {
-      title: 'Szabálysértési jog',
-      mainPoints: [
-        'Szabálysértési jegyzőkönyvek elleni panaszok',
-        'Képviselet bíróság előtt szabálysértési ügyekben',
-        'Bírságok elleni jogorvoslatok intézése'
-      ]
-    },
-    {
-      title: 'Büntetőjog',
-      mainPoints: [
-        'Védelem a nyomozati és bírósági szakaszban',
-        'Bűnügyi panaszok megszerkesztése és előterjesztése',
-        'Jogi képviselet bűntető eljárások során'
-      ]
-    },
-    {
-      title: 'Munkajog',
-      mainPoints: [
-        'Munkaügyi konfliktusok rendezése',
-        'Munkajogi képviselet bíróság előtt',
-        'Munkaügyi megállapodások és jogviták kezelése'
-      ]
-    },
-    {
-      title: 'Közigazgatási jog',
-      mainPoints: [
-        'Jogi képviselet romániai intézmények előtt',
-        'Peres ügyek intézése a közigazgatási törvényszéken',
-        'Hatósági határozatok elleni fellebbezések'
-      ]
-    }
-  ];
-
+  
   const scrollToContact = () => {
     const element = document.getElementById('kapcsolat');
     if (element) {
@@ -154,46 +88,10 @@ const Website = () => {
       </section>
       
       {/* Services Section */}
-    <section id="szakterületek" className="py-16 bg-slate-50">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">Szakterületek</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {/* All services in a single grid */}
-          {legalServices.map((service, index) => (
-            <ServiceCard key={index} service={service} />
-          ))}
-          {/* Add an empty div to fill the last spot in the grid */}
-          </div>
-      </div>
-    </section>
+      <Services/>
       {/* About Me Section */}
-      <section id="rólam" className="py-16 bg-slate-50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-8">Rólam</h2>
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <div className="prose prose-lg max-w-none text-gray-600">
-                <p className="mb-6 text-lg">
-                  Minden jogi ügy mögött egy ember áll, aki megoldást keres. Ha tapasztalt és elkötelezett ügyvédet keres, aki megértéssel és szakértelemmel képviseli Önt, jó helyen jár.
-                </p>
-                <p className="mb-6">
-                  2010-ben fejeztem be jogi tanulmányaimat a kolozsvári Babeș-Bolyai Tudományegyetem Jogi Karán. Mesteri fokozatomat Közösségi magánjog szakterületen szereztem 2011-ben, a Pécsi Tudományegyetem és a Babeș-Bolyai Tudományegyetem közös képzésének keretében.
-                </p>
-                <p className="mb-6">
-                  2013 óta büszkén képviselem ügyfeleimet a Szilágy megyei Ügyvédi Kamara tagjaként.
-                </p>
-                <p className="mb-6">
-                  A jog iránti szenvedélyem és elkötelezettségem lehetővé tette, hogy számos sikeres ügyet vigyek végig, és megerősítsem ügyfeleim bizalmát. Hiszek abban, hogy a jogi kihívások megoldása nem csupán szakmai tudást, hanem empátiát, megértést és személyre szabott megközelítést is igényel.
-                </p>
-                <p className="text-lg font-medium text-indigo-800">
-                  Bízzon meg bennem, hogy jogi problémájára hatékony és emberközpontú megoldást találjunk!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <AboutSection/>
+      {/* FAQSection */}
       <FAQSection/>
       {/* Contact Section */}
       
@@ -212,14 +110,14 @@ const Website = () => {
           <Facebook className="w-6 h-6" />
         </a>
         <a 
-          href="#" 
+          href="https://www.linkedin.com/in/kovacs-timea-638838170" 
           className="text-gray-300 hover:text-white transition-colors"
           aria-label="LinkedIn"
         >
           <Linkedin className="w-6 h-6" />
         </a>
         <a 
-          href="#" 
+          href="https://cautavocat.ro/avocat/kovacs-timea-1" 
           className="text-gray-300 hover:text-white transition-colors"
           aria-label="Website"
         >
