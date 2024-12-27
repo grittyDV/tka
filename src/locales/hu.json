@@ -1,0 +1,98 @@
+{
+  "header": {
+    "title": "Kovács Timea Ügyvédi Iroda",
+    "navigation": {
+      "home": "Főoldal",
+      "services": "Szakterületek",
+      "contact": "Kapcsolat"
+    }
+  },
+  "hero": {
+    "title": "Személyes és szakértő jogi képviselet",
+    "highlight": "szakértő",
+    "description": "Személyre szabott jogi megoldások magánszemélyek és vállalkozások részére, 15 éves szakmai tapasztalattal. Célom az Ön jogainak hatékony védelme és érdekeinek képviselete.",
+    "cta": "Időpontfoglalás",
+    "imageAlt": "Kovács Timea"
+  },
+  "services": {
+    "title": "Szakterületeink",
+    "items": {
+      "realEstate": {
+        "title": "Ingatlan ügyek",
+        "description": "Adásvételi szerződések, bérleti jogviszonyok."
+      },
+      "familyLaw": {
+        "title": "Családjog",
+        "description": "Házassági vagyonjog, öröklési ügyek."
+      },
+      "contracts": {
+        "title": "Szerződések",
+        "description": "Szerződések készítése és véleményezése."
+      },
+      "compensation": {
+        "title": "Kártérítési jog",
+        "description": "Személyi és vagyoni károk megtérítése."
+      },
+      "laborLaw": {
+        "title": "Munkajog",
+        "description": "Munkaszerződések, munkajogi viták."
+      },
+      "corporateLaw": {
+        "title": "Társasági jog",
+        "description": "Cégalapítás, változásbejelentés."
+      },
+      "debtCollection": {
+        "title": "Követeléskezelés",
+        "description": "Peres és peren kívüli ügyek."
+      },
+      "dataProtection": {
+        "title": "Adatvédelem",
+        "description": "GDPR megfelelés, szabályzatok készítése."
+      },
+      "learnMore": "További információ"
+    }
+  },
+  "contact": {
+    "title": "Kapcsolatfelvétel",
+    "form": {
+      "name": {
+        "label": "Név",
+        "required": true
+      },
+      "email": {
+        "label": "Email",
+        "required": true
+      },
+      "message": {
+        "label": "Üzenet",
+        "required": true
+      },
+      "requiredNote": "*Kötelező mezők",
+      "submit": "Üzenet Küldése"
+    },
+    "info": {
+      "title": "Elérhetőségeink",
+      "address": {
+        "title": "Irodánk címe",
+        "street": "Strada Unirii 13",
+        "city": "Zalău",
+        "postalCode": "457246",
+        "country": "Románia"
+      },
+      "email": {
+        "title": "Email",
+        "value": "kovacstimea@gmail.com"
+      },
+      "phone": {
+        "title": "Telefon",
+        "value": "+40 740 245 886"
+      },
+      "map": {
+        "alt": "Iroda térképe"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© {{year}} Kovács Timea Ügyvédi Iroda. Minden jog fenntartva."
+  }
+}
