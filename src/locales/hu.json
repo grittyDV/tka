@@ -1,18 +1,40 @@
 {
-  "header": {
-    "title": "Kovács Timea Ügyvédi Iroda",
-    "navigation": {
-      "home": "Főoldal",
-      "about": "Rólam",
-      "services": "Szakterületek",
-      "faq": "Gyakori kérdések",
-      "contact": "Kapcsolat"
+  "services": {
+    "title": "Szakterületeink",
+    "items": {
+      "inheritance": {
+        "title": "Öröklési és Vagyonjog",
+        "description": "Örökösödési eljárások lebonyolítása • Földügyek, telekönyvi és kataszteri hivatali ügyintézés • Vagyonmegosztás és tulajdonjogi viták kezelése"
+      },
+      "familyLaw": {
+        "title": "Családjog",
+        "description": "Válások és kapcsolódó jogi eljárások • Gyermekelhelyezés, tartásdíj és gyereklátogatási idő megállapítása • Távoltartási kérelmek és apasági perek kezelése"
+      },
+      "commercialLaw": {
+        "title": "Kereskedelmi jog",
+        "description": "Kereskedelmi szerződések megszerkesztése és egyeztetése • Követelések behajtása és bírósági ítéletek kényszervgrehajtása • Fizetési meghagyusos és csődeljárások jogi képviselete"
+      },
+      "insuranceLaw": {
+        "title": "Biztosítási jog",
+        "description": "Biztosítási jogok védelme és érvényesítése • Képviselet biztosítási vitákban • Jogi tanácsadás biztosítási ügyekben"
+      },
+      "misdemeanorLaw": {
+        "title": "Szabálysértési jog",
+        "description": "Szabálysértési jegyzőkönyvek elleni panaszok • Képviselet bíróság előtt szabálysértési ügyekben • Bírságok elleni jogorvoslatok intézése"
+      },
+      "criminalLaw": {
+        "title": "Büntetőjog",
+        "description": "Védelem a nyomozati és bírósági szakaszban • Bűnügyi panaszok megszerkesztése és előterjesztése • Jogi képviselet bűntető eljárások során"
+      },
+      "laborLaw": {
+        "title": "Munkajog",
+        "description": "Munkaügyi konfliktusok rendezése • Munkajogi képviselet bíróság előtt • Munkaügyi megállapodások és jogviták kezelése"
+      },
+      "administrativeLaw": {
+        "title": "Közigazgatási jog",
+        "description": "Jogi képviselet romániai intézmények előtt • Peres ügyek intézése a közigazgatási törvényszéken • Hatósági határozatok elleni fellebbezések"
+      },
+      "learnMore": "További információ"
     }
-  },
-  "hero": {...},
-  "services": {...},
-  "about": {...},
-  "faq": {...},
-  "contact": {...},
-  "footer": {...}
+  }
 }
