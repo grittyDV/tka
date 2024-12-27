@@ -1,12 +1,48 @@
-import React from 'react';
-import { MapPin, Mail, Phone, ExternalLink} from 'lucide-react';
+import React, { useState } from 'react';
+import { MapPin, Mail, Phone } from 'lucide-react';
 import { OfficeMap } from './Map';
 
-interface ContactFormProps {
-  onSubmit: (e: React.FormEvent) => void;
-}
+export const ContactSection: React.FC = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
 
-export const ContactSection: React.FC<ContactFormProps> = ({ onSubmit }) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    try {
+      const formData = new FormData(e.currentTarget);
+      
+      const formEntries = {
+        'entry.918610683': formData.get('name')?.toString() ?? '',
+        'entry.202993236': formData.get('email')?.toString() ?? '',
+        'entry.762484117': formData.get('phone')?.toString() ?? '',
+        'entry.1596383647': formData.get('message')?.toString() ?? ''
+      } as Record<string, string>;
+
+      const FORM_ID = '1FAIpQLScQNmLMD9cbrltTRaxMo53AOgJx62h4RXG2wSC3-4FBWMULLA';
+      
+      await fetch(`https://docs.google.com/forms/d/e/${FORM_ID}/formResponse`, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams(formEntries)
+      });
+      
+      setSubmitStatus('success');
+      (e.target as HTMLFormElement).reset();
+    } catch (error) {
+      console.error('Submission error:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+      // Clear status after 5 seconds
+      setTimeout(() => setSubmitStatus(null), 5000);
+    }
+  };
+
   return (
     <section id="kapcsolat" className="py-16 bg-white">
       <div className="container mx-auto px-6 max-w-6xl">
@@ -20,6 +56,7 @@ export const ContactSection: React.FC<ContactFormProps> = ({ onSubmit }) => {
                   <label className="block text-gray-700 font-medium mb-2">Név*</label>
                   <input
                     type="text"
+                    name="name"
                     className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800/20 focus:border-indigo-800 transition-all bg-white"
                     required
                   />
@@ -28,6 +65,7 @@ export const ContactSection: React.FC<ContactFormProps> = ({ onSubmit }) => {
                   <label className="block text-gray-700 font-medium mb-2">Email*</label>
                   <input
                     type="email"
+                    name="email"
                     className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800/20 focus:border-indigo-800 transition-all bg-white"
                     required
                   />
@@ -36,12 +74,14 @@ export const ContactSection: React.FC<ContactFormProps> = ({ onSubmit }) => {
                   <label className="block text-gray-700 font-medium mb-2">Telefonszám</label>
                   <input
                     type="tel"
+                    name="phone"
                     className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800/20 focus:border-indigo-800 transition-all bg-white"
                   />
                 </div>
                 <div>
                   <label className="block text-gray-700 font-medium mb-2">Üzenet*</label>
                   <textarea
+                    name="message"
                     className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800/20 focus:border-indigo-800 transition-all h-32 bg-white"
                     required
                   ></textarea>
@@ -51,11 +91,22 @@ export const ContactSection: React.FC<ContactFormProps> = ({ onSubmit }) => {
                 <p className="text-sm text-gray-500">*Kötelező mezők</p>
                 <button
                   type="submit"
-                  className="bg-indigo-800 text-white px-8 py-3 rounded-lg hover:bg-indigo-900 transition-colors font-medium"
+                  disabled={isSubmitting}
+                  className="bg-indigo-800 text-white px-8 py-3 rounded-lg hover:bg-indigo-900 transition-colors font-medium disabled:opacity-50"
                 >
-                  Üzenet Küldése
+                  {isSubmitting ? 'Küldés...' : 'Üzenet Küldése'}
                 </button>
               </div>
+              {submitStatus === 'success' && (
+                <div className="mt-4 p-4 bg-green-50 text-green-700 rounded-lg">
+                  Köszönjük üzenetét! Hamarosan felvesszük Önnel a kapcsolatot.
+                </div>
+              )}
+              {submitStatus === 'error' && (
+                <div className="mt-4 p-4 bg-red-50 text-red-700 rounded-lg">
+                  Hiba történt az üzenet küldése közben. Kérjük próbálja újra később.
+                </div>
+              )}
             </form>
           </div>
 
@@ -68,7 +119,6 @@ export const ContactSection: React.FC<ContactFormProps> = ({ onSubmit }) => {
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Irodánk címe</h3>
                   <p className="text-gray-600">Strada Unirii 13<br />Zalău 450091<br />Románia</p>
-                   
                 </div>
               </div>
               <div className="flex items-start">

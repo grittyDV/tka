@@ -95,7 +95,7 @@ const Website = () => {
       <FAQSection/>
       {/* Contact Section */}
       
-      <ContactSection onSubmit={handleContactSubmit} />
+      <ContactSection />
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8">
