@@ -7,29 +7,49 @@ A professional lawyer's presentation website used for lead generation.
 - Modern, responsive design
 - Lead generation forms
 - Practice areas showcase
-- Case results presentation
 - Contact information and consultation booking
+- Full internationalization support
 
 ## Technical Stack
 
 - React.js
 - Tailwind CSS
 - React Router for navigation
+- i18n support with translation context
 
 ## Project Structure
 
 ```
 src/
   ├── components/
-  │   └── layout/
-  │       ├── Header.jsx
-  │       └── Footer.jsx
-  ├── pages/
-  │   ├── Home.jsx
-  │   └── Contact.jsx
+  │   ├── Website.tsx
+  │   ├── Header.tsx
+  │   ├── Hero.tsx
+  │   ├── Services.tsx
+  │   ├── Contact.tsx
+  │   ├── Footer.tsx
+  │   └── index.ts
+  ├── contexts/
+  │   └── TranslationContext.tsx
+  ├── locales/
+  │   └── hu.json
+  ├── types/
+  │   └── translations.ts
   └── styles/
       └── main.css
 ```
+
+## Internationalization
+
+The website uses a translation context for managing different languages. Currently supported:
+
+- Hungarian (hu)
+
+To add a new language:
+
+1. Create a new JSON file in `src/locales/`
+2. Follow the structure of `hu.json`
+3. Update `TranslationContext.tsx` to include the new language
 
 ## Getting Started
 
