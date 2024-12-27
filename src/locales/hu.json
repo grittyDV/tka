@@ -12,7 +12,8 @@
     "title": "Személyes és szakértő jogi képviselet",
     "highlight": "szakértő",
     "description": "Személyre szabott jogi megoldások magánszemélyek és vállalkozások részére, 15 éves szakmai tapasztalattal. Célom az Ön jogainak hatékony védelme és érdekeinek képviselete.",
-    "cta": "Időpontfoglalás"
+    "cta": "Időpontfoglalás",
+    "imageAlt": "Kovács Timea"
   },
   "services": {
     "title": "Szakterületeink",
@@ -52,52 +53,19 @@
       "learnMore": "További információ"
     }
   },
-  "testimonials": {
-    "title": "Ügyfeleink Mondták",
-    "items": [
-      {
-        "name": "Kovács János",
-        "role": "Ingatlanfejlesztő",
-        "text": "Kiváló szakmai háttérrel rendelkező ügyvédi iroda, amely mindig időben és precízen végzi munkáját."
-      },
-      {
-        "name": "Nagy Éva",
-        "role": "Társasházkezelő",
-        "text": "Megbízható partner a társasházi jogviták rendezésében. Gyors és hatékony megoldásokat kínálnak."
-      },
-      {
-        "name": "Szabó Péter",
-        "role": "Vállalkozó",
-        "text": "Szerződéses ügyekben nyújtott támogatásuk kiemelkedő, szakértelmük megkérdőjelezhetetlen."
-      },
-      {
-        "name": "Kiss Mária",
-        "role": "Magánszemély",
-        "text": "Családjogi ügyemben nyújtott segítségük és empátiájuk példaértékű volt."
-      },
-      {
-        "name": "Tóth István",
-        "role": "Cégvezető",
-        "text": "Professzionális hozzáállás, személyre szabott megoldások. Csak ajánlani tudom."
-      }
-    ]
-  },
   "contact": {
     "title": "Kapcsolatfelvétel",
     "form": {
       "name": {
         "label": "Név",
-        "placeholder": "Az Ön neve",
         "required": true
       },
       "email": {
         "label": "Email",
-        "placeholder": "Az Ön email címe",
         "required": true
       },
       "message": {
         "label": "Üzenet",
-        "placeholder": "Írja le miben segíthetünk",
         "required": true
       },
       "requiredNote": "*Kötelező mezők",
