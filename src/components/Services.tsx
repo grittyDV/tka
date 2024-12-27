@@ -1,24 +1,21 @@
 import React from 'react';
 import { Home, Users, FileText, Scale, Briefcase, Building2, BadgeDollarSign, ShieldCheck, ChevronRight } from 'lucide-react';
 import { useTranslations } from '../contexts/TranslationContext';
-import type { ServiceItem } from '../types/translations';
 
-type ServiceKey = 'realEstate' | 'familyLaw' | 'contracts' | 'compensation' | 'laborLaw' | 'corporateLaw' | 'debtCollection' | 'dataProtection';
+type ServiceKey = 'inheritance' | 'familyLaw' | 'commercialLaw' | 'insuranceLaw' | 'misdemeanorLaw' | 'criminalLaw' | 'laborLaw' | 'administrativeLaw';
 
 const serviceIcons = {
-  realEstate: Home,
+  inheritance: Home,
   familyLaw: Users,
-  contracts: FileText,
-  compensation: Scale,
+  commercialLaw: FileText,
+  insuranceLaw: Shield,
+  misdemeanorLaw: Scale,
+  criminalLaw: Building2,
   laborLaw: Briefcase,
-  corporateLaw: Building2,
-  debtCollection: BadgeDollarSign,
-  dataProtection: ShieldCheck,
+  administrativeLaw: BadgeDollarSign
 } as const;
 
-type ServiceEntry = [ServiceKey, ServiceItem];
-
-function isServiceEntry(entry: [string, unknown]): entry is ServiceEntry {
+function isServiceEntry(entry: [string, unknown]): entry is [ServiceKey, { title: string; description: string }] {
   const [key] = entry;
   return key !== 'learnMore' && key in serviceIcons;
 }
