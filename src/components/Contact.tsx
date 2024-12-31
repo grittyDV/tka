@@ -57,7 +57,7 @@ export const ContactSection: React.FC = () => {
                   <input
                     type="text"
                     name="name"
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800/20 focus:border-indigo-800 transition-all bg-white"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800/20 focus:border-[#597F70] transition-all bg-white"
                     required
                   />
                 </div>
@@ -66,7 +66,7 @@ export const ContactSection: React.FC = () => {
                   <input
                     type="email"
                     name="email"
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800/20 focus:border-indigo-800 transition-all bg-white"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800/20 focus:border-[#597F70] transition-all bg-white"
                     required
                   />
                 </div>
@@ -75,14 +75,14 @@ export const ContactSection: React.FC = () => {
                   <input
                     type="tel"
                     name="phone"
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800/20 focus:border-indigo-800 transition-all bg-white"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800/20 focus:border-[#597F70] transition-all bg-white"
                   />
                 </div>
                 <div>
                   <label className="block text-gray-700 font-medium mb-2">Üzenet*</label>
                   <textarea
                     name="message"
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800/20 focus:border-indigo-800 transition-all h-32 bg-white"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800/20 focus:border-[#597F70] transition-all h-32 bg-white"
                     required
                   ></textarea>
                 </div>
@@ -92,7 +92,7 @@ export const ContactSection: React.FC = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="bg-indigo-800 text-white px-8 py-3 rounded-lg hover:bg-indigo-900 transition-colors font-medium disabled:opacity-50"
+                  className="bg-[#597F70] text-white px-8 py-3 rounded-lg hover:bg-[#597F70] transition-colors font-medium disabled:opacity-50"
                 >
                   {isSubmitting ? 'Küldés...' : 'Üzenet Küldése'}
                 </button>
@@ -115,26 +115,26 @@ export const ContactSection: React.FC = () => {
             {/* Contact Details */}
             <div className="bg-slate-50 p-8 rounded-2xl shadow-sm space-y-6">
               <div className="flex items-start">
-                <MapPin className="w-6 h-6 mr-4 text-indigo-800 flex-shrink-0" />
+                <MapPin className="w-6 h-6 mr-4 text-[#597F70] flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Irodánk címe</h3>
-                  <p className="text-gray-600">Strada Unirii 13<br />Zalău 450091<br />Románia</p>
+                  <p className="text-gray-600">Unirii u. 13 1. em.<br />Zilah 450047<br />Románia</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <Mail className="w-6 h-6 mr-4 text-indigo-800 flex-shrink-0" />
+                <Mail className="w-6 h-6 mr-4 text-[#597F70] flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                  <a href="mailto:kovacstimea@gmail.com" className="text-gray-600 hover:text-indigo-800 transition-colors">
-                    kovacstimea@gmail.com
+                  <a href="mailto:avocat.kt@gmail.com" className="text-gray-600 hover:text-[#597F70] transition-colors">
+                    avocat.kt@gmail.com
                   </a>
                 </div>
               </div>
               <div className="flex items-start">
-                <Phone className="w-6 h-6 mr-4 text-indigo-800 flex-shrink-0" />
+                <Phone className="w-6 h-6 mr-4 text-[#597F70] flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Telefon</h3>
-                  <a href="tel:+40740245886" className="text-gray-600 hover:text-indigo-800 transition-colors">
+                  <a href="tel:+40740245886" className="text-gray-600 hover:text-[#597F70] transition-colors">
                     +40 740 245 886
                   </a>
                 </div>

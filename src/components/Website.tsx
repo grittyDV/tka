@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronRight, Linkedin, Facebook, Link } from 'lucide-react';
 import timiPicture from '../assets/timi.jpeg';
-import logo from '../assets/Group 17.png';
+import logo from '../assets/LogoKT.png';
 import FAQSection from './FAQ';
 import { ContactSection } from './Contact';
 import AboutSection from './About';
@@ -40,7 +40,7 @@ const Website = () => {
               alt="Kovács Timea Ügyvédi Iroda Logo" 
               className="h-10 w-auto"  // Adjust size as needed
             />
-            <div className="text-xl font-bold text-indigo-800">
+            <div className="text-xl font-bold text-[#597F70]">
               Kovács Timea Ügyvédi Iroda
             </div>
           </div>
@@ -48,7 +48,7 @@ const Website = () => {
             {/* Desktop menu */}
             <div className="hidden md:flex space-x-8">
               {sections.map((section) => (
-                <a key={section} href={`#${section.toLowerCase()}`} className="text-gray-700 hover:text-indigo-800">
+                <a key={section} href={`#${section.toLowerCase()}`} className="text-gray-700 hover:text-[#597F70]">
                   {section}
                 </a>
               ))}
@@ -62,13 +62,13 @@ const Website = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between pb-12 md:pb-24">
             <div className="md:w-1/2 text-left md:pr-12">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6"><span className="text-indigo-800">Személyre </span> szabott jogi képviselet</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Személyre szabott jogi képviselet</h1>
               <p className="text-lg mb-8 text-gray-600">
-                Személyre szabott jogi megoldások magánszemélyek és vállalkozások részére, 15 éves szakmai tapasztalattal. Célom az Ön jogainak hatékony védelme és érdekeinek képviselete.
+              Minden jogi ügy mögött egy ember áll, aki megoldást keres. Ha tapasztalt és elkötelezett ügyvédet keres, aki megértéssel és szakértelemmel képviseli Önt, jó helyen jár. <br/> <br/> <span className="text-[#597F70] font-bold">Célom az Ön jogainak hatékony védelme és érdekeinek képviselete.</span>
               </p>
               <button
                 onClick={scrollToContact}
-                className="bg-indigo-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-900 transition-colors flex items-center"
+                className="bg-[#597F70] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#597F70] transition-colors flex items-center"
               >
                 Időpontfoglalás
                 <ChevronRight className="ml-2" />
@@ -102,13 +102,6 @@ const Website = () => {
   <div className="container mx-auto px-6">
     <div className="flex flex-col items-center space-y-4">
       <div className="flex items-center space-x-6">
-        <a 
-          href="#" 
-          className="text-gray-300 hover:text-white transition-colors"
-          aria-label="Facebook"
-        >
-          <Facebook className="w-6 h-6" />
-        </a>
         <a 
           href="https://www.linkedin.com/in/kovacs-timea-638838170" 
           className="text-gray-300 hover:text-white transition-colors"

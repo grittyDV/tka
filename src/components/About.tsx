@@ -5,10 +5,10 @@ const aboutContent = {
     paragraphs: [
       "Minden jogi ügy mögött egy ember áll, aki megoldást keres. Ha tapasztalt és elkötelezett ügyvédet keres, aki megértéssel és szakértelemmel képviseli Önt, jó helyen jár.",
       "2010-ben fejeztem be jogi tanulmányaimat a kolozsvári Babeș-Bolyai Tudományegyetem Jogi Karán. Mesteri fokozatomat Közösségi magánjog szakterületen szereztem 2011-ben, a Pécsi Tudományegyetem és a Babeș-Bolyai Tudományegyetem közös képzésének keretében.",
-      "2013 óta büszkén képviselem ügyfeleimet a Szilágy megyei Ügyvédi Kamara tagjaként.",
+      "2013 óta sikeresen képviselem ügyfeleimet a Szilágy megyei Ügyvédi Kamara tagjaként.",
       "A jog iránti szenvedélyem és elkötelezettségem lehetővé tette, hogy számos sikeres ügyet vigyek végig, és megerősítsem ügyfeleim bizalmát. Hiszek abban, hogy a jogi kihívások megoldása nem csupán szakmai tudást, hanem empátiát, megértést és személyre szabott megközelítést is igényel.",
     ],
-    closing: "Bízzon meg bennem, hogy jogi problémájára hatékony és emberközpontú megoldást találjunk!"
+    closing: "Jogi problémájára hatékony megoldást találunk!"
   };
   
   const AboutSection = () => {
@@ -24,7 +24,7 @@ const aboutContent = {
                     {paragraph}
                   </p>
                 ))}
-                <p className="text-lg font-medium text-indigo-800">
+                <p className="text-lg font-medium text-[#597F70]">
                   {aboutContent.closing}
                 </p>
               </div>

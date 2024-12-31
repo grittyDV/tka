@@ -9,39 +9,36 @@ interface FAQ {
   const faqs: FAQ[] = [
     {
       question: "Mennyibe kerül egy első konzultáció?",
-      answer: "Az első konzultáció díjmentes, amely során megismerhetem az Ön ügyét és átfogó jogi tanácsot adhatok a további lépésekről és várható költségekről."
+      answer: "Az első konzultáció díjmentes, amely során megismerhetem az Ön ügyét és egyeztetünk a további lépésekről és a várható költségekről és munkadijról. "
     },
     {
       question: "Milyen nyelveken beszél?",
-      answer: "Folyékonyan beszélek magyarul és románul, így mindkét nyelven teljes körű jogi szolgáltatást tudok nyújtani."
+      answer: "Folyékonyan beszélek magyarul, románul és angolul, így ezen nyelven teljes körű jogi szolgáltatást tudok nyújtani Romániában."
     },
     {
       question: "Vállal-e ügyeket más megyében is?",
-      answer: "Igen, Szilágy megye teljes területén, valamint szükség esetén a környező megyékben is vállalok jogi képviseletet."
+      answer: "Első sorban Szilágy megye területén, illetve a környező megyékben is vállalok jogi képviseletet."
     },
     {
         "question": "Hogyan léphetek kapcsolatba Önnel jogi tanácsadásért?",
-        "answer": "Időpontot egyeztethet telefonon vagy e-mailben. Az elérhetőségeimet megtalálja a kapcsolati oldalon."
+        "answer": "Időpontot egyeztethet telefonon vagy e-mailben vagy a weboldal Kapcolat oldalán. Az elérhetőségeimet szintén megtalálja a Kapcsolat oldalon."
     },
     {
-        "question": "Mennyibe kerül a jogi tanácsadás?",
-        "answer": "A díjszabás az ügy bonyolultságától és a szükséges időtől függ. Egy előzetes konzultáció során pontosabb árajánlatot tudok adni."
-    },
-    {
+    
         "question": "Milyen dokumentumokat kell magammal hoznom az első konzultációra?",
         "answer": "Az ügyéhez kapcsolódó minden releváns dokumentumot, például szerződéseket, levelezéseket, hatósági értesítéseket vagy egyéb bizonyítékokat."
       },
       {
         "question": "Képvisel bírósági ügyekben is?",
-        "answer": "Igen, jogi képviseletet biztosítok mind polgári, mind büntető, valamint közigazgatási ügyekben."
+        "answer": "Igen, jogi képviseletet biztosítok mind polgári, mind büntető, valamint közigazgatási ügyekben is."
       },
       {
         "question": "Segít szerződések készítésében és ellenőrzésében?",
         "answer": "Igen, vállalom szerződések megszerkesztését, módosítását és ellenőrzését az Ön érdekeinek védelme érdekében."
       },
       {
-        "question": "Vállal cégek számára jogi szolgáltatásokat is?",
-        "answer": "Igen, vállalok cégek számára kereskedelmi szerződések készítését, jogi képviseletet és követelésbehajtást is."
+        "question": "Vállal cégek számára is jogi szolgáltatásokat?",
+        "answer": "Igen, cégek számára is vállalom a kereskedelmi szerződések készítését, jogi képviseletet és követelésbehajtást."
       }
   ];
   
@@ -54,7 +51,7 @@ interface FAQ {
           className="w-full px-6 py-5 flex justify-between items-center focus:outline-none group"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <h3 className="text-lg font-medium text-gray-900 text-left group-hover:text-indigo-800 transition-colors">
+          <h3 className="text-lg font-medium text-gray-900 text-left group-hover:text-[#597F70] transition-colors">
             {faq.question}
           </h3>
           <span 
@@ -62,7 +59,7 @@ interface FAQ {
               isOpen ? 'rotate-90' : ''
             }`}
           >
-            <ChevronRight className="w-6 h-6 text-indigo-600" />
+            <ChevronRight className="w-6 h-6 text-[#597F70]" />
           </span>
         </button>
         <div

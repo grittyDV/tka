@@ -3,7 +3,7 @@ import { Service, ServiceCard } from "./ServiceCard";
 
 const legalServices: Service[] = [
     {
-      "title": "Öröklési és Vagyonjog",
+      "title": "Öröklési és Tulajdonjog",
       "mainPoints": [
         "Örökösödési eljárások lebonyolítása",
         "Földügyek, telekkönyvi és kataszteri hivatali ügyintézés",
@@ -13,7 +13,7 @@ const legalServices: Service[] = [
     {
       "title": "Családjog",
       "mainPoints": [
-        "Válások és kapcsolódó jogi eljárások",
+        "Válo perek és ahhoz kapcsolódó jogi eljárások",
         "Gyermekelhelyezés, tartásdíj és gyereklátogatási idő megállapítása",
         "Távoltartási kérelmek és apasági perek kezelése"
       ]
