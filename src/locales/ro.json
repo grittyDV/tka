@@ -1,0 +1,121 @@
+{
+    "Page": {
+      "title": "Cabinet de Avocat Kovács Tímea",
+      "navigation": {
+        "home": "Acasă",
+        "services": "Domenii de Activitate",
+        "aboutme": "Despre Mine",
+        "faq": "Întrebări",
+        "contact": "Contact"
+      }
+    },
+    "Hero": {
+      "title": "Reprezentare juridică personală și profesionistă",
+      "description": "În spatele fiecărei probleme juridice se află o persoană care caută o soluție. Dacă sunteți în căutarea unui avocat experimentat și dedicat, care să vă reprezinte cu înțelegere și expertiză, ați ajuns la locul potrivit.",
+      "highlighted_description": "Obiectivul meu este protejarea eficientă a drepturilor dumneavoastră și reprezentarea intereselor dumneavoastră.",
+      "cta": "Programare",
+      "imageAlt": "Kovács Timea"
+    },
+    "AboutContent": {
+      "title": "Despre Mine",
+      "paragraphs": [
+        "În spatele fiecărei probleme juridice se află o persoană care caută o soluție. Dacă sunteți în căutarea unui avocat experimentat și dedicat, care să vă reprezinte cu înțelegere și expertiză, ați ajuns la locul potrivit.",
+        "Am absolvit Facultatea de Drept a Universității Babeș-Bolyai din Cluj-Napoca în anul 2010. Am obținut diploma de master în Drept Privat Comunitar în 2011, în cadrul unui program comun al Universității din Pécs și al Universității Babeș-Bolyai.",
+        "Din 2013, îmi reprezint cu succes clienții ca membru al Baroului Sălaj.",
+        "Pasiunea și angajamentul meu pentru drept mi-au permis să duc la bun sfârșit numeroase cazuri de succes și să întăresc încrederea clienților mei. Cred că soluționarea provocărilor juridice necesită nu doar cunoștințe profesionale, ci și empatie, înțelegere și o abordare personalizată."
+      ],
+      "closing": "Vom găsi o soluție eficientă pentru problema dumneavoastră juridică!"
+    },
+    "services": {
+      "title": "Domenii de Activitate",
+      "services": [
+        {
+          "title": "Dreptul Succesoral și Dreptul Proprietății",
+          "mainPoints": [
+            "Derularea procedurilor de succesiune",
+            "Gestionarea problemelor legate de terenuri, carte funciară și cadastru",
+            "Partaj și soluționarea litigiilor privind dreptul de proprietate"
+          ]
+        },
+        {
+          "title": "Dreptul Familiei",
+          "mainPoints": [
+            "Procese de divorț și proceduri juridice aferente",
+            "Stabilirea custodiei copilului, pensiei de întreținere și programului de vizită",
+            "Gestionarea cererilor de ordine de protecție și proceselor de stabilire a paternității"
+          ]
+        },
+        {
+          "title": "Drept Comercial",
+          "mainPoints": [
+            "Redactarea și negocierea contractelor comerciale",
+            "Recuperarea creanțelor și executarea hotărârilor judecătorești",
+            "Reprezentare juridică în proceduri de somație și insolvență"
+          ]
+        },
+        {
+          "title": "Dreptul Asigurărilor",
+          "mainPoints": [
+            "Protecția și valorificarea drepturilor de asigurare",
+            "Reprezentare în litigii privind asigurările",
+            "Consultanță juridică în domeniul asigurărilor"
+          ]
+        },
+        {
+          "title": "Drept Contravențional",
+          "mainPoints": [
+            "Contestații împotriva proceselor-verbale de contravenție",
+            "Reprezentare în fața instanței în cazuri contravenționale",
+            "Gestionarea căilor de atac împotriva amenzilor"
+          ]
+        },
+        {
+          "title": "Drept Penal",
+          "mainPoints": [
+            "Apărare în faza de urmărire penală și în instanță",
+            "Redactarea și depunerea plângerilor penale",
+            "Reprezentare juridică în cadrul procedurilor penale"
+          ]
+        },
+        {
+          "title": "Dreptul Muncii",
+          "mainPoints": [
+            "Soluționarea conflictelor de muncă",
+            "Reprezentare juridică în instanță în cazuri legate de muncă",
+            "Gestionarea acordurilor și litigiilor de muncă"
+          ]
+        },
+        {
+          "title": "Drept Administrativ",
+          "mainPoints": [
+            "Reprezentare juridică în fața instituțiilor din România",
+            "Gestionarea litigiilor în instanțele administrative",
+            "Contestații împotriva deciziilor autorităților"
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "form": {
+        "name": "Nume*",
+        "email": "Email*",
+        "phone": "Număr de telefon",
+        "message": "Mesaj",
+        "requiredNote": "*Câmpuri obligatorii",
+        "submit": "Trimite Mesaj",
+        "submit_success": "Vă mulțumim pentru mesaj! Vă vom contacta în curând.",
+        "submit_failed": "A apărut o eroare la trimiterea mesajului. Vă rugăm să încercați din nou mai târziu."
+      },
+      "info": {
+        "title": "Informații de Contact",
+        "address": "Zalău, Strada Unirii 13, Etaj 1",
+        "email": "avocat.kt@gmail.com",
+        "phone": "+40 740 245 886"
+      }
+    },
+    "footer": {
+      "copyright": "© {{year}} Cabinet de Avocat Kovács Timea. Toate drepturile rezervate."
+    }
+  }
+  

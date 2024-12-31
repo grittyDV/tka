@@ -1,5 +1,5 @@
 import React from 'react';
-import Website from './components/Website';
+import Website from './pages/Website';
 
 function App() {
   return (

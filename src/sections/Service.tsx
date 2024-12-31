@@ -1,5 +1,5 @@
 import { servicesContent } from "../types/services";
-import { Service, ServiceCard } from "./ServiceCard";
+import { ServiceCard } from "../components/ServiceCard";
 
 export const Services: React.FC = () => {
   return (

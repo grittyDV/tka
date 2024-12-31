@@ -1,95 +1,117 @@
 {
-  "header": {
-    "title": "Kovács Timea Ügyvédi Iroda",
+  "Page": {
+    "title": "Kovács Tímea Ügyvédi Iroda",
     "navigation": {
       "home": "Főoldal",
       "services": "Szakterületek",
+      "aboutme": "Rólam",
+      "faq": "Kérdések",
       "contact": "Kapcsolat"
     }
   },
-  "hero": {
+  "Hero": {
     "title": "Személyes és szakértő jogi képviselet",
-    "highlight": "szakértő",
-    "description": "Személyre szabott jogi megoldások magánszemélyek és vállalkozások részére, 15 éves szakmai tapasztalattal. Célom az Ön jogainak hatékony védelme és érdekeinek képviselete.",
+    "description": "Minden jogi ügy mögött egy ember áll, aki megoldást keres. Ha tapasztalt és elkötelezett ügyvédet keres, aki megértéssel és szakértelemmel képviseli Önt, jó helyen jár.",
+    "highlighted_description": "Célom az Ön jogainak hatékony védelme és érdekeinek képviselete.",
     "cta": "Időpontfoglalás",
     "imageAlt": "Kovács Timea"
   },
+  "AboutContent": {
+    "title": "Rólam",
+    "paragraphs": [
+      "Minden jogi ügy mögött egy ember áll, aki megoldást keres. Ha tapasztalt és elkötelezett ügyvédet keres, aki megértéssel és szakértelemmel képviseli Önt, jó helyen jár.",
+      "2010-ben fejeztem be jogi tanulmányaimat a kolozsvári Babeș-Bolyai Tudományegyetem Jogi Karán. Mesteri fokozatomat Közösségi magánjog szakterületen szereztem 2011-ben, a Pécsi Tudományegyetem és a Babeș-Bolyai Tudományegyetem közös képzésének keretében.",
+      "2013 óta sikeresen képviselem ügyfeleimet a Szilágy megyei Ügyvédi Kamara tagjaként.",
+      "A jog iránti szenvedélyem és elkötelezettségem lehetővé tette, hogy számos sikeres ügyet vigyek végig, és megerősítsem ügyfeleim bizalmát. Hiszek abban, hogy a jogi kihívások megoldása nem csupán szakmai tudást, hanem empátiát, megértést és személyre szabott megközelítést is igényel.",
+    ],
+    "closing": "Jogi problémájára hatékony megoldást találunk!"
+  },
   "services": {
-    "title": "Szakterületeink",
-    "items": {
-      "realEstate": {
-        "title": "Ingatlan ügyek",
-        "description": "Adásvételi szerződések, bérleti jogviszonyok."
+    "title": "Szakterületek",
+    "services": [
+      {
+        "title": "Öröklési és Tulajdonjog",
+        "mainPoints": [
+          "Örökösödési eljárások lebonyolítása",
+          "Földügyek, telekkönyvi és kataszteri hivatali ügyintézés",
+          "Vagyonmegosztás és tulajdonjogi viták kezelése"
+        ]
       },
-      "familyLaw": {
+      {
         "title": "Családjog",
-        "description": "Házassági vagyonjog, öröklési ügyek."
+        "mainPoints": [
+          "Válo perek és ahhoz kapcsolódó jogi eljárások",
+          "Gyermekelhelyezés, tartásdíj és gyereklátogatási idő megállapítása",
+          "Távoltartási kérelmek és apasági perek kezelése"
+        ]
       },
-      "contracts": {
-        "title": "Szerződések",
-        "description": "Szerződések készítése és véleményezése."
+      {
+        "title": "Kereskedelmi jog",
+        "mainPoints": [
+          "Kereskedelmi szerződések megszerkesztése és egyeztetése",
+          "Követelések behajtása és bírósági ítéletek kényszervégrehajtása",
+          "Fizetési meghagyásos és csődeljárások jogi képviselete"
+        ]
       },
-      "compensation": {
-        "title": "Kártérítési jog",
-        "description": "Személyi és vagyoni károk megtérítése."
+      {
+        "title": "Biztosítási jog",
+        "mainPoints": [
+          "Biztosítási jogok védelme és érvényesítése",
+          "Képviselet biztosítási vitákban",
+          "Jogi tanácsadás biztosítási ügyekben"
+        ]
       },
-      "laborLaw": {
+      {
+        "title": "Szabálysértési jog",
+        "mainPoints": [
+          "Szabálysértési jegyzőkönyvek elleni panaszok",
+          "Képviselet bíróság előtt szabálysértési ügyekben",
+          "Bírságok elleni jogorvoslatok intézése"
+        ]
+      },
+      {
+        "title": "Büntetőjog",
+        "mainPoints": [
+          "Védelem a nyomozati és bírósági szakaszban",
+          "Bűnügyi panaszok megszerkesztése és előterjesztése",
+          "Jogi képviselet bűntető eljárások során"
+        ]
+      },
+      {
         "title": "Munkajog",
-        "description": "Munkaszerződések, munkajogi viták."
+        "mainPoints": [
+          "Munkaügyi konfliktusok rendezése",
+          "Munkajogi képviselet bíróság előtt",
+          "Munkaügyi megállapodások és jogviták kezelése"
+        ]
       },
-      "corporateLaw": {
-        "title": "Társasági jog",
-        "description": "Cégalapítás, változásbejelentés."
-      },
-      "debtCollection": {
-        "title": "Követeléskezelés",
-        "description": "Peres és peren kívüli ügyek."
-      },
-      "dataProtection": {
-        "title": "Adatvédelem",
-        "description": "GDPR megfelelés, szabályzatok készítése."
-      },
-      "learnMore": "További információ"
-    }
+      {
+        "title": "Közigazgatási jog",
+        "mainPoints": [
+          "Jogi képviselet romániai intézmények előtt",
+          "Peres ügyek intézése a közigazgatási törvényszéken",
+          "Hatósági határozatok elleni fellebbezések"
+        ]
+      }
+    ]
   },
   "contact": {
     "title": "Kapcsolatfelvétel",
     "form": {
-      "name": {
-        "label": "Név",
-        "required": true
-      },
-      "email": {
-        "label": "Email",
-        "required": true
-      },
-      "message": {
-        "label": "Üzenet",
-        "required": true
-      },
+      "name": "Név*",
+      "email": "Email*",
+      "phone":"Telefonszám",
+      "message": "Üzenet",
       "requiredNote": "*Kötelező mezők",
-      "submit": "Üzenet Küldése"
+      "submit": "Üzenet Küldése",
+      "submit_success": "Köszönjük üzenetét! Hamarosan felvesszük Önnel a kapcsolatot.",
+      "submit_failed": "Hiba történt az üzenet küldése közben. Kérjük próbálja újra később."
     },
     "info": {
       "title": "Elérhetőségeink",
-      "address": {
-        "title": "Irodánk címe",
-        "street": "Strada Unirii 13",
-        "city": "Zalău",
-        "postalCode": "457246",
-        "country": "Románia"
-      },
-      "email": {
-        "title": "Email",
-        "value": "kovacstimea@gmail.com"
-      },
-      "phone": {
-        "title": "Telefon",
-        "value": "+40 740 245 886"
-      },
-      "map": {
-        "alt": "Iroda térképe"
-      }
+      "address": "Zilah, Unirii utca 13, 1. emelet",
+      "email": "avocat.kt@gmail.com",
+      "phone": "+40 740 245 886"
     }
   },
   "footer": {

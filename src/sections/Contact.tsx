@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import { MapPin, Mail, Phone } from 'lucide-react';
-import { OfficeMap } from './Map';
+import { MapPin, Mail, Phone, ExternalLink } from 'lucide-react';
+import { OfficeMap } from '../components/Map';
 
 export const ContactSection: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
+  
+  const coordinates = "47.179435,23.053965";
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${coordinates}`;
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -38,7 +41,6 @@ export const ContactSection: React.FC = () => {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
-      // Clear status after 5 seconds
       setTimeout(() => setSubmitStatus(null), 5000);
     }
   };
@@ -112,19 +114,29 @@ export const ContactSection: React.FC = () => {
 
           {/* Contact Info */}
           <div className="space-y-8">
-            {/* Contact Details */}
             <div className="bg-slate-50 p-8 rounded-2xl shadow-sm space-y-6">
+              <h3 className="font-semibold text-gray-900 mb-4">Elérhetőségeink</h3>
               <div className="flex items-start">
                 <MapPin className="w-6 h-6 mr-4 text-[#597F70] flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Irodánk címe</h3>
-                  <p className="text-gray-600">Unirii u. 13 1. em.<br />Zilah 450047<br />Románia</p>
+                <div className="flex-grow">
+                  <div className="flex items-start justify-between gap-4">
+                    
+                    <a
+                      href={googleMapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-[#597F70] hover:text-[#436557] transition-colors"
+                      title="Megtekintés Google Maps-en"
+                    >
+                      <p className="text-gray-600">Zilah, Unirii utca 13, 1. emelet </p>
+                      <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="flex items-start">
                 <Mail className="w-6 h-6 mr-4 text-[#597F70] flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                   <a href="mailto:avocat.kt@gmail.com" className="text-gray-600 hover:text-[#597F70] transition-colors">
                     avocat.kt@gmail.com
                   </a>
@@ -133,7 +145,6 @@ export const ContactSection: React.FC = () => {
               <div className="flex items-start">
                 <Phone className="w-6 h-6 mr-4 text-[#597F70] flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Telefon</h3>
                   <a href="tel:+40740245886" className="text-gray-600 hover:text-[#597F70] transition-colors">
                     +40 740 245 886
                   </a>
@@ -143,8 +154,7 @@ export const ContactSection: React.FC = () => {
 
             {/* Map */}
             <div className="bg-slate-50 p-8 rounded-2xl shadow-sm">
-              <h3 className="font-semibold text-gray-900 mb-4">Térképes elérhetőség</h3>
-              <OfficeMap />
+              <OfficeMap googleMapsUrl={googleMapsUrl} />
             </div>
           </div>
         </div>
