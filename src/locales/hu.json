@@ -1,34 +1,24 @@
 {
-  "Page": {
-    "title": "Kovács Tímea Ügyvédi Iroda",
-    "navigation": {
-      "home": "Főoldal",
-      "services": "Szakterületek",
-      "aboutme": "Rólam",
-      "faq": "Kérdések",
-      "contact": "Kapcsolat"
-    }
-  },
-  "Hero": {
-    "title": "Személyes és szakértő jogi képviselet",
+  "hero": {
+    "title": "Személyre szabott jogi képviselet",
     "description": "Minden jogi ügy mögött egy ember áll, aki megoldást keres. Ha tapasztalt és elkötelezett ügyvédet keres, aki megértéssel és szakértelemmel képviseli Önt, jó helyen jár.",
     "highlighted_description": "Célom az Ön jogainak hatékony védelme és érdekeinek képviselete.",
-    "cta": "Időpontfoglalás",
-    "imageAlt": "Kovács Timea"
+    "cta": "Mondja el, miben segíthetek!",
+    "imageAlt": "Kovács Tímea"
   },
-  "AboutContent": {
+  "about": {
     "title": "Rólam",
     "paragraphs": [
       "Minden jogi ügy mögött egy ember áll, aki megoldást keres. Ha tapasztalt és elkötelezett ügyvédet keres, aki megértéssel és szakértelemmel képviseli Önt, jó helyen jár.",
       "2010-ben fejeztem be jogi tanulmányaimat a kolozsvári Babeș-Bolyai Tudományegyetem Jogi Karán. Mesteri fokozatomat Közösségi magánjog szakterületen szereztem 2011-ben, a Pécsi Tudományegyetem és a Babeș-Bolyai Tudományegyetem közös képzésének keretében.",
       "2013 óta sikeresen képviselem ügyfeleimet a Szilágy megyei Ügyvédi Kamara tagjaként.",
-      "A jog iránti szenvedélyem és elkötelezettségem lehetővé tette, hogy számos sikeres ügyet vigyek végig, és megerősítsem ügyfeleim bizalmát. Hiszek abban, hogy a jogi kihívások megoldása nem csupán szakmai tudást, hanem empátiát, megértést és személyre szabott megközelítést is igényel.",
+      "A jog iránti szenvedélyem és elkötelezettségem lehetővé tette, hogy számos sikeres ügyet vigyek végig, és megerősítsem ügyfeleim bizalmát. Hiszek abban, hogy a jogi kihívások megoldása nem csupán szakmai tudást, hanem empátiát, megértést és személyre szabott megközelítést is igényel."
     ],
     "closing": "Jogi problémájára hatékony megoldást találunk!"
   },
   "services": {
     "title": "Szakterületek",
-    "services": [
+    "items": [
       {
         "title": "Öröklési és Tulajdonjog",
         "mainPoints": [
@@ -98,23 +88,91 @@
   "contact": {
     "title": "Kapcsolatfelvétel",
     "form": {
-      "name": "Név*",
-      "email": "Email*",
-      "phone":"Telefonszám",
-      "message": "Üzenet",
-      "requiredNote": "*Kötelező mezők",
-      "submit": "Üzenet Küldése",
-      "submit_success": "Köszönjük üzenetét! Hamarosan felvesszük Önnel a kapcsolatot.",
-      "submit_failed": "Hiba történt az üzenet küldése közben. Kérjük próbálja újra később."
+      "name": {
+        "label": "Név*"
+      },
+      "email": {
+        "label": "Email*"
+      },
+      "phone": {
+        "label": "Telefonszám"
+      },
+      "message": {
+        "label": "Üzenet*"
+      },
+      "requiredFields": "*Kötelező mezők",
+      "submitButton": {
+        "default": "Üzenet Küldése",
+        "sending": "Küldés..."
+      },
+      "success": "Köszönjük üzenetét! Hamarosan felvesszük Önnel a kapcsolatot.",
+      "error": "Hiba történt az üzenet küldése közben. Kérjük próbálja újra később."
     },
     "info": {
       "title": "Elérhetőségeink",
       "address": "Zilah, Unirii utca 13, 1. emelet",
-      "email": "avocat.kt@gmail.com",
-      "phone": "+40 740 245 886"
+      "viewOnMaps": "Megtekintés Google Maps-en"
     }
   },
-  "footer": {
-    "copyright": "© {{year}} Kovács Timea Ügyvédi Iroda. Minden jog fenntartva."
+  "map": {
+    "title": "Office location on Google Maps",
+    "openInMaps": "Megnyitás Google Maps-ben"
+  },
+  "faq": {
+    "title": "Gyakran Ismételt Kérdések",
+    "description": "Az alábbi kérdések és válaszok segíthetnek eligazodni a jogi szolgáltatásaimmal kapcsolatban",
+    "items": [
+      {
+        "question": "Mennyibe kerül egy első konzultáció?",
+        "answer": "Az első konzultáció díjmentes, amely során megismerhetem az Ön ügyét és egyeztetünk a további lépésekről és a várható költségekről és munkadijról."
+      },
+      {
+        "question": "Milyen nyelveken beszél?",
+        "answer": "Folyékonyan beszélek magyarul, románul és angolul, így ezen nyelven teljes körű jogi szolgáltatást tudok nyújtani Romániában."
+      },
+      {
+        "question": "Vállal-e ügyeket más megyében is?",
+        "answer": "Első sorban Szilágy megye területén, illetve a környező megyékben is vállalok jogi képviseletet."
+      },
+      {
+        "question": "Hogyan léphetek kapcsolatba Önnel jogi tanácsadásért?",
+        "answer": "Időpontot egyeztethet telefonon vagy e-mailben vagy a weboldal Kapcolat oldalán. Az elérhetőségeimet szintén megtalálja a Kapcsolat oldalon."
+      },
+      {
+        "question": "Milyen dokumentumokat kell magammal hoznom az első konzultációra?",
+        "answer": "Az ügyéhez kapcsolódó minden releváns dokumentumot, például szerződéseket, levelezéseket, hatósági értesítéseket vagy egyéb bizonyítékokat."
+      },
+      {
+        "question": "Képvisel bírósági ügyekben is?",
+        "answer": "Igen, jogi képviseletet biztosítok mind polgári, mind büntető, valamint közigazgatási ügyekben is."
+      },
+      {
+        "question": "Segít szerződések készítésében és ellenőrzésében?",
+        "answer": "Igen, vállalom szerződések megszerkesztését, módosítását és ellenőrzését az Ön érdekeinek védelme érdekében."
+      },
+      {
+        "question": "Vállal cégek számára is jogi szolgáltatásokat?",
+        "answer": "Igen, cégek számára is vállalom a kereskedelmi szerződések készítését, jogi képviseletet és követelésbehajtást."
+      }
+    ]
+  },
+  "page": {
+    "title": "Kovács Tímea Ügyvédi Iroda",
+    "logoAlt": "Kovács Tímea Ügyvédi Iroda Logo",
+    "navigation": {
+      "home": "Főoldal",
+      "services": "Szakterületek",
+      "aboutme": "Rólam",
+      "faq": "Kérdések",
+      "contact": "Kapcsolat"
+    },
+    "footer": {
+      "socialLinks": {
+        "facebook": "Facebook",
+        "linkedin": "LinkedIn",
+        "website": "Website"
+      },
+      "copyright": "Minden jog fenntartva."
+    }
   }
 }

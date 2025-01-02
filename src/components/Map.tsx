@@ -1,11 +1,14 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
+import { useTranslations } from '../context/TranslationContext';
 
 interface OfficeMapProps {
   googleMapsUrl: string;
 }
 
 export const OfficeMap: React.FC<OfficeMapProps> = ({ googleMapsUrl }) => {
+  const { t } = useTranslations();
+
   return (
     <div className="space-y-4">
       <div className="relative h-[300px] w-full rounded-lg overflow-hidden border border-gray-200">
@@ -17,16 +20,17 @@ export const OfficeMap: React.FC<OfficeMapProps> = ({ googleMapsUrl }) => {
           loading="lazy"
           allowFullScreen
           referrerPolicy="no-referrer-when-downgrade"
-          title="Office location on Google Maps"
+          title={t.map.title}
           className="absolute inset-0"
         />
       </div>
-      <a href={googleMapsUrl}
+      <a 
+        href={googleMapsUrl}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center justify-center gap-2 w-full px-4 py-2 bg-[#597F70] text-white rounded-lg hover:bg-[#436557] transition-colors"
       >
-        <span>Megnyitás Google Maps-ben</span>
+        <span>{t.map.openInMaps}</span>
         <ExternalLink className="w-4 h-4" />
       </a>
     </div>

@@ -1,0 +1,178 @@
+{
+    "hero": {
+        "title": "Personalized Legal Representation",
+        "description": "Every legal case is unique, with a person seeking a solution. If you're looking for an experienced and dedicated attorney who will represent you with professionalism and understanding, you've come to the right place.",
+        "highlighted_description": "My goal is to effectively protect your rights and represent your best interests.",
+        "cta": "Let's Discuss!",
+        "imageAlt": "Kovács Tímea"
+    },
+    "about": {
+        "title": "About Me",
+        "paragraphs": [
+            "Every legal challenge is an opportunity to find a solution. If you're looking for a skilled and dedicated attorney who will provide expert guidance with empathy and understanding, you're in the right place.",
+            "I graduated from the Faculty of Law at Babeș-Bolyai University in Cluj-Napoca in 2010. I obtained my Master’s in Community Private Law in 2011 through a joint program between the University of Pécs and Babeș-Bolyai University.",
+            "Since 2013, I have been practicing law as a member of the Sălaj Bar Association, successfully representing my clients.",
+            "My passion for the law and commitment to my clients have allowed me to handle numerous successful cases, building trust through professionalism and personalized attention. I believe solving legal issues requires not only expertise but also empathy and a tailored approach."
+        ],
+        "closing": "Together, we will find the best solution to your legal problem!"
+    },
+    "services": {
+        "title": "My Practice Areas",
+        "items": [
+            {
+                "title": "Inheritance and Property Law",
+                "mainPoints": [
+                    "Handling inheritance procedures",
+                    "Managing property registry, cadastral issues, and land matters",
+                    "Asset division and resolving property disputes"
+                ]
+            },
+            {
+                "title": "Family Law",
+                "mainPoints": [
+                    "Divorce proceedings and related legal matters",
+                    "Child custody, alimony, and visitation arrangements",
+                    "Handling protection orders and paternity cases"
+                ]
+            },
+            {
+                "title": "Commercial Law",
+                "mainPoints": [
+                    "Drafting and negotiating business contracts",
+                    "Debt recovery and enforcement of court rulings",
+                    "Legal representation in payment orders and insolvency cases"
+                ]
+            },
+            {
+                "title": "Insurance Law",
+                "mainPoints": [
+                    "Protecting and enforcing insurance rights",
+                    "Representing clients in insurance disputes",
+                    "Offering legal advice on insurance matters"
+                ]
+            },
+            {
+                "title": "Contraventional Law",
+                "mainPoints": [
+                    "Challenging violation reports",
+                    "Court representation in contravention cases",
+                    "Handling appeals against fines"
+                ]
+            },
+            {
+                "title": "Criminal Law",
+                "mainPoints": [
+                    "Defense during investigations and trials",
+                    "Drafting and filing criminal complaints",
+                    "Legal representation in criminal proceedings"
+                ]
+            },
+            {
+                "title": "Labor Law",
+                "mainPoints": [
+                    "Resolving workplace disputes",
+                    "Legal representation in labor court cases",
+                    "Managing labor contracts and disputes"
+                ]
+            },
+            {
+                "title": "Administrative Law",
+                "mainPoints": [
+                    "Legal representation before Romanian authorities",
+                    "Handling cases in administrative courts",
+                    "Appeals against administrative decisions"
+                ]
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contact Me",
+        "form": {
+            "name": {
+                "label": "Name*"
+            },
+            "email": {
+                "label": "Email*"
+            },
+            "phone": {
+                "label": "Phone"
+            },
+            "message": {
+                "label": "Message*"
+            },
+            "requiredFields": "*Required fields",
+            "submitButton": {
+                "default": "Send Message",
+                "sending": "Sending..."
+            },
+            "success": "Thank you for reaching out! I will get back to you shortly.",
+            "error": "An error occurred while sending your message. Please try again later."
+        },
+        "info": {
+            "title": "Contact Information",
+            "address": "Zalău, Unirii Street No. 13, 1st Floor",
+            "viewOnMaps": "View on Google Maps"
+        }
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "description": "Here are some common questions that might help you better understand our legal services.",
+        "items": [
+            {
+                "question": "What is the cost of an initial consultation?",
+                "answer": "The initial consultation is free. During this meeting, I will review your case, discuss potential next steps, and provide an estimate of any costs involved."
+            },
+            {
+                "question": "What languages do you speak?",
+                "answer": "I am fluent in Romanian, Hungarian, and English, and offer comprehensive legal services in these languages throughout Romania."
+            },
+            {
+                "question": "Do you take cases in other counties?",
+                "answer": "I primarily handle cases in Sălaj County and nearby areas."
+            },
+            {
+                "question": "How can I contact you for legal advice?",
+                "answer": "You can reach me via phone, email, or by using the contact form on the website. My contact details are listed on the Contact page."
+            },
+            {
+                "question": "What documents should I bring to the initial consultation?",
+                "answer": "Please bring all relevant documents such as contracts, correspondence, official notices, or any other evidence related to your case."
+            },
+            {
+                "question": "Do you offer court representation?",
+                "answer": "Yes, I provide legal representation in civil, criminal, and administrative matters."
+            },
+            {
+                "question": "Do you help with contract drafting and review?",
+                "answer": "Yes, I assist with drafting, modifying, and reviewing contracts to ensure your interests are protected."
+            },
+            {
+                "question": "Do you provide legal services for companies?",
+                "answer": "Yes, I offer services like drafting commercial contracts, legal representation, and debt recovery for businesses."
+            }
+        ]
+    },
+    "map": {
+        "title": "Office Location on Google Maps",
+        "openInMaps": "Open in Google Maps"
+    },
+    "page": {
+        "title": "Kovács Tímea Law Office",
+        "logoAlt": "Kovács Tímea Law Office Logo",
+        "navigation": {
+            "home": "Home",
+            "services": "Services",
+            "aboutme": "About Me",
+            "faq": "FAQ",
+            "contact": "Contact"
+        },
+        "footer": {
+            "socialLinks": {
+                "facebook": "Facebook",
+                "linkedin": "LinkedIn",
+                "website": "Website"
+            },
+            "copyright": "All rights reserved."
+        }
+    }
+}
