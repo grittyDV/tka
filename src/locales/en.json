@@ -174,21 +174,56 @@
             },
             "copyright": "All rights reserved.",
             "cookies": {
-                "consentMessage": "We use cookies to enhance your browsing experience and analyze our traffic.",
+                "title": "Cookie Settings",
+                "consentMessage": "This website uses cookies to enhance your browsing experience.",
                 "learnMore": "Learn More",
                 "accept": "Accept",
-                "decline": "Decline"
+                "decline": "Decline",
+                "settings": "Settings",
+                "save": "Save",
+                "essential": {
+                    "title": "Essential Cookies",
+                    "description": "These cookies are necessary for the basic functionality of the website and cannot be disabled."
+                },
+                "analytics": {
+                    "title": "Analytics Cookies",
+                    "description": "Help us understand how visitors use the website. This data is anonymous."
+                },
+                "functional": {
+                    "title": "Functional Cookies",
+                    "description": "Provide special functions and remember your choices."
+                },
+                "preferences": {
+                    "title": "Settings Cookies",
+                    "description": "Enable website personalization and remember your preferences."
+                }
             },
             "privacy": {
                 "title": "Privacy Policy",
-                "lastUpdated": "Last updated: January 2024",
+                "lastUpdated": "Last updated: January 2025",
                 "dataCollection": {
-                    "title": "Information We Collect",
-                    "content": "..."
+                    "title": "Data Collection",
+                    "content": "Our website uses Google Analytics to analyze visitor traffic. This only collects non-personal data, such as visit duration, pages viewed, and device type. Personal information provided through the contact form (name, email address) is used exclusively for communication with you."
                 },
                 "cookies": {
                     "title": "Cookie Usage",
-                    "content": "..."
+                    "content": "Our website uses cookies to improve user experience. These include strictly necessary cookies for website functionality and analytical cookies for Google Analytics services."
+                },
+                "dataUsage": {
+                    "title": "Data Usage",
+                    "content": "The collected data is used exclusively for analyzing website performance and improving our services. We do not share your personal information with third parties."
+                },
+                "gdprRights": {
+                    "title": "GDPR Rights",
+                    "content": "Under the EU General Data Protection Regulation (GDPR), you have the right to access, rectify, delete, and port your data, as well as object to data processing. You can exercise these rights through the contact information provided."
+                },
+                "dataSecurity": {
+                    "title": "Data Security",
+                    "content": "We implement appropriate technical and organizational measures to ensure the protection of your personal data. Data is stored on secure servers and we regularly review our security protocols."
+                },
+                "retention": {
+                    "title": "Data Retention",
+                    "content": "Personal data submitted through the contact form for inquiries that do not convert into active cases will be deleted after 6 months. For active cases, data is retained for 5 years after case closure. Non-personal data collected by Google Analytics is retained for 26 months."
                 }
             }
         }

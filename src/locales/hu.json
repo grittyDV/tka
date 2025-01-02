@@ -174,23 +174,58 @@
       },
       "copyright": "Minden jog fenntartva.",
       "cookies": {
-          "consentMessage": "We use cookies to enhance your browsing experience and analyze our traffic.",
-          "learnMore": "Learn More",
-          "accept": "Accept",
-          "decline": "Decline"
+        "title": "Süti beállítások",
+        "consentMessage": "Ez a weboldal sütiket használ a felhasználói élmény javítása érdekében.",
+        "learnMore": "További információ",
+        "accept": "Elfogadás",
+        "decline": "Elutasítás",
+        "settings": "Beállítások",
+        "save": "Mentés",
+        "essential": {
+          "title": "Szükséges sütik",
+          "description": "Ezek a sütik szükségesek a weboldal alapvető működéséhez és nem kapcsolhatók ki."
+        },
+        "analytics": {
+          "title": "Analitikai sütik",
+          "description": "Segítenek megérteni, hogyan használják a látogatók a weboldalt. Ezek az adatok névtelenek."
+        },
+        "functional": {
+          "title": "Funkcionális sütik",
+          "description": "Speciális funkciókat biztosítanak és megjegyzik a választásait."
+        },
+        "preferences": {
+          "title": "Beállítási sütik",
+          "description": "Ezek a sütik lehetővé teszik a weboldal személyre szabását és a beállítások megjegyzését."
+        }
       },
       "privacy": {
-          "title": "Privacy Policy",
-          "lastUpdated": "Last updated: January 2024",
-          "dataCollection": {
-              "title": "Information We Collect",
-              "content": "..."
-          },
-          "cookies": {
-              "title": "Cookie Usage",
-              "content": "..."
-          }
+        "title": "Adatvédelmi Nyilatkozat",
+        "lastUpdated": "Utolsó frissítés: 2025 január",
+        "dataCollection": {
+          "title": "Adatgyűjtés",
+          "content": "Weboldalunk a Google Analytics szolgáltatást használja a látogatói forgalom elemzésére. Ez kizárólag nem személyes adatokat gyűjt, mint például a látogatások időtartama, megtekintett oldalak és az eszköz típusa. A kapcsolatfelvételi űrlapon megadott személyes adatokat (név, email cím) kizárólag az Önnel való kapcsolattartásra használjuk."
+        },
+        "cookies": {
+          "title": "Sütik használata",
+          "content": "Weboldalunk sütiket (cookies) használ a felhasználói élmény javítása érdekében. Ezek között vannak feltétlenül szükséges sütik a weboldal működéséhez, valamint analitikai sütik a Google Analytics szolgáltatáshoz."
+        },
+        "dataUsage": {
+          "title": "Adatfelhasználás",
+          "content": "Az összegyűjtött adatokat kizárólag a weboldal teljesítményének elemzésére és a szolgáltatásaink fejlesztésére használjuk. Személyes adatait harmadik félnek nem adjuk át."
+        },
+        "gdprRights": {
+          "title": "GDPR szerinti jogok",
+          "content": "Az EU általános adatvédelmi rendelete (GDPR) szerint Önt megilleti a hozzáférés, helyesbítés, törlés, adathordozhatóság joga, valamint tiltakozhat az adatkezelés ellen. Ezen jogait a kapcsolati információknál megadott elérhetőségeken gyakorolhatja."
+        },
+        "dataSecurity": {
+          "title": "Adatbiztonság",
+          "content": "Megfelelő technikai és szervezési intézkedéseket alkalmazunk személyes adatai védelmének biztosítása érdekében. Az adatokat biztonságos szervereken tároljuk és rendszeresen felülvizsgáljuk biztonsági protokolljainkat."
+        },
+        "retention": {
+          "title": "Adatmegőrzés",
+          "content": "A kapcsolatfelvételi űrlapon megadott személyes adatokat aktív üggyé nem váló megkeresések esetén 6 hónap után töröljük. Aktív ügyekben az adatokat az ügy lezárásától számított 5 évig őrizzük meg. A Google Analytics által gyűjtött nem személyes adatokat 26 hónapig tároljuk."
+        }
       }
+    }
   }
-}
 }

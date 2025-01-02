@@ -1,8 +1,11 @@
-// App.tsx
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Website from './pages/Website';
+import PrivacyPolicy from './pages/Privacy';
 import { TranslationProvider } from './context/TranslationContext';
 import { ErrorBoundary } from './components/ErrorBoundary';
-import { CookieConsent } from './components/Cookie';
+import { CookieConsentBanner } from './components/CookieConsent';
+import { useAnalytics } from './hooks/useAnalytics';
+
 
 function App() {
   // Get current path and determine language
@@ -24,16 +27,33 @@ function App() {
   };
 
   const lang = getLang();
-
-  console.log('Current language:', lang); // Debug log
+  
+  const { trackEvent } = useAnalytics(); 
+  trackEvent('visit', {
+    pageName: 'home',
+    language: getLang()
+  });
 
   return (
     <ErrorBoundary>
       <TranslationProvider lang={lang}>
-        <div className="App">
-          <Website />
-          <CookieConsent/>
-        </div>
+        <Router>
+          <div className="App">
+            <Routes>
+              <Route path="/" element={<Website />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              {/* Language-specific routes */}
+              <Route path="/hu/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/en/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/ro/privacy-policy" element={<PrivacyPolicy />} />
+              {/* Main routes with language prefixes */}
+              <Route path="/hu" element={<Website />} />
+              <Route path="/en" element={<Website />} />
+              <Route path="/ro" element={<Website />} />
+            </Routes>
+            <CookieConsentBanner />
+          </div>
+        </Router>
       </TranslationProvider>
     </ErrorBoundary>
   );

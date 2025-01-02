@@ -156,21 +156,56 @@
             },
             "copyright": "Toate drepturile rezervate.",
             "cookies": {
-                "consentMessage": "We use cookies to enhance your browsing experience and analyze our traffic.",
-                "learnMore": "Learn More",
+                "title": "Setări Cookie",
+                "consentMessage": "Acest site web folosește cookie-uri pentru a îmbunătăți experiența de navigare.",
+                "learnMore": "Află mai multe",
                 "accept": "Accept",
-                "decline": "Decline"
+                "decline": "Refuz",
+                "settings": "Setări",
+                "save": "Salvează",
+                "essential": {
+                    "title": "Cookie-uri esențiale",
+                    "description": "Aceste cookie-uri sunt necesare pentru funcționarea de bază a site-ului web și nu pot fi dezactivate."
+                },
+                "analytics": {
+                    "title": "Cookie-uri analitice",
+                    "description": "Ne ajută să înțelegem cum folosesc vizitatorii site-ul web. Aceste date sunt anonime."
+                },
+                "functional": {
+                    "title": "Cookie-uri funcționale",
+                    "description": "Oferă funcții speciale și memorează alegerile dvs."
+                },
+                "preferences": {
+                    "title": "Cookie-uri de setări",
+                    "description": "Permit personalizarea site-ului web și memorarea preferințelor dvs."
+                }
             },
             "privacy": {
-                "title": "Privacy Policy",
-                "lastUpdated": "Last updated: January 2024",
+                "title": "Politica de Confidențialitate",
+                "lastUpdated": "Ultima actualizare: ianuarie 2025",
                 "dataCollection": {
-                    "title": "Information We Collect",
-                    "content": "..."
+                    "title": "Colectarea Datelor",
+                    "content": "Site-ul nostru folosește Google Analytics pentru analiza traficului vizitatorilor. Acesta colectează doar date non-personale, cum ar fi durata vizitelor, paginile vizualizate și tipul dispozitivului. Informațiile personale furnizate prin formularul de contact (nume, adresă de email) sunt utilizate exclusiv pentru comunicarea cu dumneavoastră."
                 },
                 "cookies": {
-                    "title": "Cookie Usage",
-                    "content": "..."
+                    "title": "Utilizarea Cookie-urilor",
+                    "content": "Site-ul nostru utilizează cookie-uri pentru îmbunătățirea experienței utilizatorilor. Acestea includ cookie-uri strict necesare pentru funcționalitatea site-ului și cookie-uri analitice pentru serviciile Google Analytics."
+                },
+                "dataUsage": {
+                    "title": "Utilizarea Datelor",
+                    "content": "Datele colectate sunt utilizate exclusiv pentru analiza performanței site-ului și îmbunătățirea serviciilor noastre. Nu împărtășim informațiile dumneavoastră personale cu terțe părți."
+                },
+                "gdprRights": {
+                    "title": "Drepturi GDPR",
+                    "content": "Conform Regulamentului General privind Protecția Datelor (GDPR) al UE, aveți dreptul de acces, rectificare, ștergere și portabilitate a datelor, precum și dreptul de a vă opune prelucrării datelor. Puteți exercita aceste drepturi prin intermediul informațiilor de contact furnizate."
+                },
+                "dataSecurity": {
+                    "title": "Securitatea Datelor",
+                    "content": "Implementăm măsuri tehnice și organizatorice adecvate pentru a asigura protecția datelor dumneavoastră personale. Datele sunt stocate pe servere securizate și revizuim periodic protocoalele noastre de securitate."
+                },
+                "retention": {
+                    "title": "Păstrarea Datelor",
+                    "content": "Datele personale transmise prin formularul de contact pentru solicitările care nu se transformă în cazuri active vor fi șterse după 6 luni. Pentru cazurile active, datele sunt păstrate timp de 5 ani de la închiderea cazului. Datele non-personale colectate prin Google Analytics sunt păstrate timp de 26 de luni."
                 }
             }
         }

@@ -7,9 +7,10 @@ import { Services } from '../sections/Service';
 import { Hero } from '../sections/Hero';
 import { useTranslations } from '../context/TranslationContext';
 import { LanguageDropdown } from '../components/LanguageDropDown';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Website = () => {
-  const { t } = useTranslations();
+  const { t, lang } = useTranslations(); // Add currentLanguage from context
 
   const navItems = [
     { id: 'home', label: t.page.navigation.home },
@@ -18,6 +19,9 @@ const Website = () => {
     { id: 'about', label: t.page.navigation.aboutme },
     { id: 'contact', label: t.page.navigation.contact }
   ];
+
+  // Create privacy policy URL with language parameter
+  const privacyPolicyUrl = `/${lang}/privacy-policy`;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -95,9 +99,12 @@ const Website = () => {
               <div className="border-l border-gray-600 h-4"></div>
               <LanguageDropdown variant="footer" />
               <div className="border-l border-gray-600 h-4"></div>
-              <a href="/privacy-policy" className="text-gray-400 text-sm hover:text-white">
+              <RouterLink 
+                to={privacyPolicyUrl} 
+                className="text-gray-400 text-sm hover:text-white"
+              >
                 {t.page.footer.privacy.title}
-              </a>
+              </RouterLink>
             </div>
           </div>
         </div>
