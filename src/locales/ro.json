@@ -154,7 +154,25 @@
                 "linkedin": "LinkedIn",
                 "website": "Website"
             },
-            "copyright": "Toate drepturile rezervate."
+            "copyright": "Toate drepturile rezervate.",
+            "cookies": {
+                "consentMessage": "We use cookies to enhance your browsing experience and analyze our traffic.",
+                "learnMore": "Learn More",
+                "accept": "Accept",
+                "decline": "Decline"
+            },
+            "privacy": {
+                "title": "Privacy Policy",
+                "lastUpdated": "Last updated: January 2024",
+                "dataCollection": {
+                    "title": "Information We Collect",
+                    "content": "..."
+                },
+                "cookies": {
+                    "title": "Cookie Usage",
+                    "content": "..."
+                }
+            }
         }
     }
 }

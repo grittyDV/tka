@@ -1,6 +1,6 @@
 {
     "hero": {
-        "title": "Personalized Legal Representation",
+        "title": "Personalized Legal Defense",
         "description": "Every legal case is unique, with a person seeking a solution. If you're looking for an experienced and dedicated attorney who will represent you with professionalism and understanding, you've come to the right place.",
         "highlighted_description": "My goal is to effectively protect your rights and represent your best interests.",
         "cta": "Let's Discuss!",
@@ -17,7 +17,7 @@
         "closing": "Together, we will find the best solution to your legal problem!"
     },
     "services": {
-        "title": "My Practice Areas",
+        "title": "Practice Areas",
         "items": [
             {
                 "title": "Inheritance and Property Law",
@@ -172,7 +172,25 @@
                 "linkedin": "LinkedIn",
                 "website": "Website"
             },
-            "copyright": "All rights reserved."
+            "copyright": "All rights reserved.",
+            "cookies": {
+                "consentMessage": "We use cookies to enhance your browsing experience and analyze our traffic.",
+                "learnMore": "Learn More",
+                "accept": "Accept",
+                "decline": "Decline"
+            },
+            "privacy": {
+                "title": "Privacy Policy",
+                "lastUpdated": "Last updated: January 2024",
+                "dataCollection": {
+                    "title": "Information We Collect",
+                    "content": "..."
+                },
+                "cookies": {
+                    "title": "Cookie Usage",
+                    "content": "..."
+                }
+            }
         }
     }
 }

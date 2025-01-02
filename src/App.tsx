@@ -2,6 +2,7 @@
 import Website from './pages/Website';
 import { TranslationProvider } from './context/TranslationContext';
 import { ErrorBoundary } from './components/ErrorBoundary';
+import { CookieConsent } from './components/Cookie';
 
 function App() {
   // Get current path and determine language
@@ -31,6 +32,7 @@ function App() {
       <TranslationProvider lang={lang}>
         <div className="App">
           <Website />
+          <CookieConsent/>
         </div>
       </TranslationProvider>
     </ErrorBoundary>

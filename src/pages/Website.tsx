@@ -39,7 +39,7 @@ const Website = () => {
             {/* Desktop menu */}
             <div className="hidden md:flex items-center space-x-8">
               {navItems.map((item) => (
-               <a 
+                <a
                   key={item.id}
                   href={`#${item.id}`}
                   className="text-gray-700 hover:text-[#597F70]"
@@ -94,6 +94,10 @@ const Website = () => {
               </p>
               <div className="border-l border-gray-600 h-4"></div>
               <LanguageDropdown variant="footer" />
+              <div className="border-l border-gray-600 h-4"></div>
+              <a href="/privacy-policy" className="text-gray-400 text-sm hover:text-white">
+                {t.page.footer.privacy.title}
+              </a>
             </div>
           </div>
         </div>
