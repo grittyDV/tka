@@ -20,69 +20,65 @@
         "title": "Practice Areas",
         "items": [
             {
-                "title": "Inheritance and Property Law",
-                "mainPoints": [
-                    "Handling inheritance procedures",
-                    "Managing property registry, cadastral issues, and land matters",
-                    "Asset division and resolving property disputes"
-                ]
-            },
-            {
                 "title": "Family Law",
                 "mainPoints": [
-                    "Divorce proceedings and related legal matters",
-                    "Child custody, alimony, and visitation arrangements",
-                    "Handling protection orders and paternity cases"
+                    "Divorce and ancillary requests",
+                    "Determination of the child's residence, maintenance allowance, and visitation schedule",
+                    "Protection orders and establishing or denying paternity of the child"
                 ]
             },
             {
                 "title": "Commercial Law",
                 "mainPoints": [
-                    "Drafting and negotiating business contracts",
-                    "Debt recovery and enforcement of court rulings",
-                    "Legal representation in payment orders and insolvency cases"
+                    "Legal consultancy and assistance in negotiating and concluding contracts",
+                    "Enforcement proceedings, insolvency",
+                    "Payment summons and orders"
+                ]
+            },
+            {
+                "title": "Inheritance and Property Law",
+                "mainPoints": [
+                    "Managing inheritance procedures, partition",
+                    "Land disputes, land registry, and cadastral services",
+                    "Claims for recovery of property and boundary disputes"
+                ]
+            },
+            {
+                "title": "Contravention Law",
+                "mainPoints": [
+                    "Drafting and supporting contravention complaints against contravention reports issued, for example, by IPJ, ITM, ANAF, ANPC, etc."
                 ]
             },
             {
                 "title": "Insurance Law",
                 "mainPoints": [
-                    "Protecting and enforcing insurance rights",
-                    "Representing clients in insurance disputes",
-                    "Offering legal advice on insurance matters"
-                ]
-            },
-            {
-                "title": "Contraventional Law",
-                "mainPoints": [
-                    "Challenging violation reports",
-                    "Court representation in contravention cases",
-                    "Handling appeals against fines"
+                    "Protection and enforcement of insurance rights (RCA, CASCO)",
+                    "Representation and legal consultancy in insurance disputes"
                 ]
             },
             {
                 "title": "Criminal Law",
                 "mainPoints": [
-                    "Defense during investigations and trials",
-                    "Drafting and filing criminal complaints",
-                    "Legal representation in criminal proceedings"
+                    "Drafting criminal complaints",
+                    "Assistance and representation in criminal proceedings"
                 ]
             },
             {
                 "title": "Labor Law",
                 "mainPoints": [
-                    "Resolving workplace disputes",
-                    "Legal representation in labor court cases",
-                    "Managing labor contracts and disputes"
+                    "Assistance and representation of employees before employers",
+                    "Challenges to dismissal decisions",
+                    "Challenges to retirement decisions"
                 ]
             },
             {
                 "title": "Administrative Law",
                 "mainPoints": [
-                    "Legal representation before Romanian authorities",
-                    "Handling cases in administrative courts",
-                    "Appeals against administrative decisions"
+                    "Legal representation before public authorities and institutions",
+                    "Challenges to administrative decisions",
+                    "Litigation before administrative courts"
                 ]
-            }
+            }            
         ]
     },
     "contact": {
@@ -132,7 +128,7 @@
             },
             {
                 "question": "How can I contact you for legal advice?",
-                "answer": "You can reach me via phone, email, or by using the contact form on the website. My contact details are listed on the Contact page."
+                "answer": "You can reach me via phone, email, or by using the contact form on the website."
             },
             {
                 "question": "What documents should I bring to the initial consultation?",

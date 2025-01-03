@@ -20,34 +20,47 @@
         "title": "Domenii de Activitate",
         "items": [
             {
-                "title": "Drept civil",
-                "mainPoints": [
-                    "Proceduri succesorale și partaj",
-                    "Fond funciar",
-                    "Drept de proprietate"
-                ]
-            },
-            {
                 "title": "Dreptul familiei",
                 "mainPoints": [
                     "Divorț și cereri accesorii",
-                    "Stabilirea sau tăgăduirea paternității copilului",
-                    "Ordin de protecție"
-                ]
-            },
-            {
-                "title": "Drept contravențional",
-                "mainPoints": [
-                    "Redactare și susținere plângere contravențională",
-                    "Asistență și reprezentare client în fața instanțelor de judecată"
+                    "Stabilirea locuinței copilului, pensiei de întreținere și programului de vizitare",
+                    "Ordin de protecție și stabilirea sau tăgăduirea paternității copilului"
                 ]
             },
             {
                 "title": "Drept comercial",
                 "mainPoints": [
                     "Consultanță și asistență juridică la negocierea și încheierea contractelor",
-                    "Somații și ordonanță de plată",
-                    "Executări silite, insolvență"
+                    "Executări silite, insolvență",
+                    "Somații și ordonanță de plată"
+                ]
+            },
+            {
+                "title": "Dreptul succesoral și dreptul de proprietate",
+                "mainPoints": [
+                    "Gestionarea procedurilor de moștenire, partaj",
+                    "Litigii de fond funciar, servicii de carte funciară și cadastru",
+                    "Acțiuni în revendicare și grănițuire"
+                ]
+            },
+            {
+                "title": "Drept contravențional",
+                "mainPoints": [
+                    "Redactare și susținere plângere contravențională împotriva proceselor-verbale contravenționale emise de exmplu de IPJ, ITM, ANAF, ANPC, etc."
+                ]
+            },
+            {
+                "title": "Dreptul asigurărilor",
+                "mainPoints": [
+                    "Protecția și exercitarea drepturilor de asigurare (RCA, CASCO)",
+                    "Reprezentare și consultanță juridică în litigii de asigurări"
+                ]
+            },
+            {
+                "title": "Drept penal",
+                "mainPoints": [
+                    "Redactare plângeri penale",
+                    "Asistență și reprezentare în procesul penal"
                 ]
             },
             {
@@ -59,10 +72,11 @@
                 ]
             },
             {
-                "title": "Drept penal",
+                "title": "Drept administrativ",
                 "mainPoints": [
-                    "Redactare plângeri penale",
-                    "Asistență și reprezentare în procesul penal"
+                    "Reprezentare juridică în fața autorităților și instituțiilor publice",
+                    "Contestații împotriva deciziilor autorităților",
+                    "Litigii în fața instanței de contencios administrativ"
                 ]
             }
         ]
@@ -102,11 +116,7 @@
         "items": [
             {
                 "question": "Cât costă o primă consultație?",
-                "answer": "Prima consultație este gratuită, oferindu-mi astfel ocazia să înțeleg mai bine cazul dumneavoastră și să discutăm despre pașii următori, precum și despre costurile procesului și onorariul avocațial."
-            },
-            {
-                "question": "Ce limbă cunoașteți?",
-                "answer": "Vorbesc fluent limba maghiară, română și engleză, astfel încât pot oferi servicii juridice complete în România în aceste limbi."
+                "answer": "O primă consultație de 30 de minute este gratuită, oferindu-ne astfel timp să înțelegem cazul dumneavoastră și să discutăm despre pașii următori, strategie și costurile aferente."
             },
             {
                 "question": "Preluați cazuri și în alte județe?",
@@ -114,7 +124,7 @@
             },
             {
                 "question": "Cum pot lua legătura cu dumneavoastră?",
-                "answer": "Puteți solicita o întâlnire prin telefon, e-mail sau pe pagina de Contact. Datele mele de contact sunt disponibile pe pagina de Contact."
+                "answer": "Puteți solicita o întâlnire prin telefon, e-mail sau mai jos prin formularul de Contact."
             },
             {
                 "question": "Ce documente trebuie să aduc la prima consultație?",
@@ -125,12 +135,12 @@
                 "answer": "Da, asigur asistență juridică în cazuri civile, penale și administrative."
             },
             {
-                "question": "Oferiți servicii în redactarea și verificarea contractelor?",
-                "answer": "Da, mă ocup de redactarea, modificarea și verificarea contractelor pentru a proteja interesele dumneavoastră."
-            },
-            {
                 "question": "Oferiți servicii juridice și pentru firme?",
                 "answer": "Da, ofer servicii juridice pentru firme, inclusiv redactarea de contracte comerciale, reprezentare juridică în instanță și recuperarea creanțelor."
+            },
+            {
+                "question": "Oferiți servicii în redactarea și verificarea contractelor?",
+                "answer": "Da, mă ocup de redactarea, modificarea și verificarea contractelor pentru a proteja interesele dumneavoastră."
             }
         ]
     },

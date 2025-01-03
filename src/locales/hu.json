@@ -20,59 +20,58 @@
     "title": "Szakterületek",
     "items": [
       {
-        "title": "Öröklési és Tulajdonjog",
-        "mainPoints": [
-          "Örökösödési eljárások lebonyolítása",
-          "Földügyek, telekkönyvi és kataszteri hivatali ügyintézés",
-          "Vagyonmegosztás és tulajdonjogi viták kezelése"
-        ]
-      },
-      {
         "title": "Családjog",
         "mainPoints": [
-          "Válo perek és ahhoz kapcsolódó jogi eljárások",
-          "Gyermekelhelyezés, tartásdíj és gyereklátogatási idő megállapítása",
+          "Váloperek és ahhoz kapcsolódó jogi eljárások",
+          "Gyerekelhelyezés, tartásdíj és gyereklátogatási idő megállapítása",
           "Távoltartási kérelmek és apasági perek kezelése"
         ]
       },
       {
         "title": "Kereskedelmi jog",
         "mainPoints": [
-          "Kereskedelmi szerződések megszerkesztése és egyeztetése",
+          "Kereskedelmi szerződések megszerkesztése",
           "Követelések behajtása és bírósági ítéletek kényszervégrehajtása",
           "Fizetési meghagyásos és csődeljárások jogi képviselete"
         ]
       },
       {
-        "title": "Biztosítási jog",
+        "title": "Öröklési és Tulajdonjog",
         "mainPoints": [
-          "Biztosítási jogok védelme és érvényesítése",
-          "Képviselet biztosítási vitákban",
-          "Jogi tanácsadás biztosítási ügyekben"
+          "Öröklési eljárások lebonyolítása",
+          "Földügyek, telekkönyvi és kataszteri hivatali ügyintézés",
+          "Vagyonmegosztás és tulajdonjogi viták kezelése"
         ]
       },
       {
         "title": "Szabálysértési jog",
         "mainPoints": [
-          "Szabálysértési jegyzőkönyvek elleni panaszok",
-          "Képviselet bíróság előtt szabálysértési ügyekben",
-          "Bírságok elleni jogorvoslatok intézése"
+          "Szabálysértési jegyzőkönyvek elleni panaszok, mint például:",
+          "Közlekedési kihágások (IPJ)",
+          "Pénzügyi és adóügyi szabálytalanságok (ANAF)",
+          "Munkaügyi és munkavédelmi szabályok megsértése (ITM)"
         ]
       },
+      {
+        "title": "Biztosítási jog",
+        "mainPoints": [
+          "Biztosítási jogok védelme és érvényesítése (RCA, CASCO)",
+          "Képviselet és jogi tanácsadás biztosítási vitákban"
+        ]
+      },
+      
       {
         "title": "Büntetőjog",
         "mainPoints": [
           "Védelem a nyomozati és bírósági szakaszban",
-          "Bűnügyi panaszok megszerkesztése és előterjesztése",
-          "Jogi képviselet bűntető eljárások során"
+          "Bűnügyi panaszok megszerkesztése és előterjesztése"
         ]
       },
       {
         "title": "Munkajog",
         "mainPoints": [
           "Munkaügyi konfliktusok rendezése",
-          "Munkajogi képviselet bíróság előtt",
-          "Munkaügyi megállapodások és jogviták kezelése"
+          "Munkajogi képviselet bíróság előtt"
         ]
       },
       {
@@ -124,7 +123,7 @@
     "items": [
       {
         "question": "Mennyibe kerül egy első konzultáció?",
-        "answer": "Az első konzultáció díjmentes, amely során megismerhetem az Ön ügyét és egyeztetünk a további lépésekről és a várható költségekről és munkadijról."
+        "answer": "Az első 30 perces konzultáció díjmentes, amely során megismerhetem az Ön ügyét és egyeztetünk a további lépésekről és a várható költségekről."
       },
       {
         "question": "Milyen nyelveken beszél?",
